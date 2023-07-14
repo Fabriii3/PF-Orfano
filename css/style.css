@@ -1,0 +1,580 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@1,87,562&display=swap');
+
+
+a { 
+    text-decoration:none;
+    color: black;
+}
+    
+li {
+ list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+
+
+ /* Body index page1 */
+#Paginaprincipal{
+    display: grid;
+    grid-template-rows: 0.5fr repeat(2, 2fr) 0.5fr; 
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main "
+    "footer footer footer";
+}
+
+/* body comprar page2 */
+
+/* header index */
+#headerindex {
+    display: grid;
+    grid-area: header;
+}
+
+#headertop {
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60%;
+    background-color: #E3F2FD;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+   align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.navbartop  {
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   }
+
+.navbartop li {
+    padding: 8px;
+    border-radius: 10px ;
+    border: 2px solid black;
+    list-style-type: none;
+    margin:20px;
+   
+}
+
+
+/* main index PAGE1 */
+
+#mainindex {
+    /* background-color:#BBDEFB; */
+    height: 100%;
+    display: grid;
+    grid-area: main;
+  grid-template-rows: repeat(2,1fr) ;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-areas: 
+  "sobrenosotros sobrenosotros"
+  "mapa contacto "
+  ;
+}
+
+#nosotros {
+  grid-area:sobrenosotros;
+}
+
+.sobrenosotros{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16px;
+    padding: 10px;
+    margin: 2px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.sobrenosotros h3{
+    text-align: center;
+    font-size:25px;
+    font-family:  Roboto,  'Open Sans', 'Helvetica Neue',
+}
+.sobrenosotros p {
+    padding: 25px;
+}
+.textnosotros {
+flex-basis: 50%;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.imgnosotros {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgnosotros2 {
+   padding-left: 10px;
+}
+
+
+.mapaubicacion {
+    grid-area: mapa ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+   }
+  
+   .mapaubicacion2 {
+      height: 600px;
+      width: 900px;
+      padding-top: 10px;
+     padding-right: 10px;
+     }
+
+.infocontacto h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:35px; 
+    text-align: center;
+}
+    
+.infocontacto {  
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 20px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    justify-content: space-evenly;  
+    border-top: 2px solid black;
+}
+
+
+
+.wsapaside {
+    position:fixed;
+      left: 93%;
+      bottom: 15%;   
+  }
+  .imglogowsap {
+      height:120px;
+  }
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Main comprar page2*/
+.catalogoproductos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulocatalgo {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.producto img {
+    width: 220px;
+    height: 280px;
+    border-radius: 30px;
+}
+
+.producto {
+    margin: 50px;
+}
+
+.producto p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* footer index*/
+
+#footerindex {
+    display: grid;
+    grid-area:footer;
+    grid-template-rows: 1fr 0.5fr ;
+    grid-template-columns: 2fr 2fr 0.5;
+    grid-template-areas: 
+    "nosotros ayuda siguenos "
+    "derechosautor derechosautor derechosautor";
+    padding-top: 10px;
+    bottom:0;
+    width: 100%;   
+}
+
+#footerindex h4 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footerindex li {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#rpmcompetición {
+    background-color:#E3F2FD;
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;    
+}
+
+#ayudaft {
+    background-color:#E3F2FD;
+    grid-area: ayuda;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#siguenosft{
+    background-color:#E3F2FD;
+    grid-area: siguenos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+ .redesft2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 10px;   
+} 
+
+.img-redes{
+   height:30px;
+   padding: 3px;
+} 
+
+
+ #derechosautor  {
+    display: grid;
+    grid-area:derechosautor; 
+
+ }
+
+ .derechosautor2 {
+    background-color:#E3F2FD;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+ }
+
+ #derechosautor div h5{ 
+font-size: 14px;
+font-family:'Noto Serif', serif; ;
+ }
+
+ 
+ 
+
+/* Escritorio primero o destok first */
+
+@media (max-width :1200px) {
+    #Paginaprincipal{
+        display: grid;
+        grid-template-rows: 0.5fr repeat(2, 2fr) 0.5fr; 
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main "
+        "footer footer footer";
+}
+
+.imgnosotros2 {
+   height:500px;
+}
+
+.mapaubicacion2 {
+    height: 500px;
+    width: 600px;
+    padding-top: 100px;
+  
+   }
+
+   .infocontacto h3{
+    font-size: 30px;
+   margin-top: 30px ;
+ 
+   }
+
+   .infocontacto {
+    font-size: 16px;
+    padding-bottom: 20px;
+ 
+   }
+
+ .wsapaside {
+    position:fixed;
+      left: 90%;
+      bottom: 15%; }  
+ }
+
+
+@media (max-width :1024px) {
+    #mainindex {
+        grid-area: main;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sobrenosotros"
+            "mapa"
+            "contacto";
+    }
+
+    .sobrenosotros {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        padding: 50px;
+        flex-direction: column;
+    }
+    .textnosotros h3 {
+        font-size: 50px;
+    }
+
+  .textnosotros ul li {
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+      
+        }
+
+    .imgnosotros2 {
+        width: 900px;
+    }
+
+    .mapaubicacion{
+        border-top: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .mapaubicacion2 {
+        height: 900px;
+        width: 950px;
+        
+
+    }
+
+    .wsapaside {
+        position: fixed;
+        left: 86%;
+        bottom: 10%;
+    }
+    .infocontacto h3 {
+        font-size: 50px;
+        margin-bottom: 50px;
+     
+    }
+
+    .infocontacto {
+        display: flex;
+        font-size: 25px;
+        padding-bottom: 20px;
+        border-top: 2px solid black;
+
+    }
+
+
+}
+@media (min-width :768px)  and  (max-width :968px) {
+    .imgnosotros2 {
+        width: 500px;
+     }
+     
+     .mapaubicacion2 {
+         width: 500px;
+        }
+
+    .wsapaside {
+        position:fixed;
+          left: 86%;
+          bottom: 15%; }
+}
+  
+@media (max-width :768px) {
+   
+    .textnosotros h3 {
+        font-size: 50px;
+    }
+
+  .textnosotros ul li {
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+      
+        }
+
+
+    .imgnosotros2 {
+        width: 500px;
+     }
+     
+     .mapaubicacion2 {    
+         width: 500px;
+        }
+
+        .wsapaside {
+            position:fixed;
+              left: 80%;
+              bottom: 6%; }
+    }
+    
+@media (min-width :600px)  and  (max-width :630px) {
+    .navbartop {
+        font-size: 12px;
+      }
+
+    .wsapaside {
+        position:fixed;
+          left: 76%;
+          bottom: 8%; }
+}
+
+@media (max-width :600px) {
+   .navbartop {
+     font-size: 14px;
+   }
+   .textnosotros h3 {
+    font-size: 50px;
+}
+
+.imgnosotros2 {
+    width: 400px;
+ }
+ 
+ .mapaubicacion2 {    
+     width: 400px;
+    }
+
+.textnosotros ul li {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  
+    }
+
+   .infocontacto h3{
+    font-size: 30px;
+ 
+   }
+
+   .infocontacto {
+    font-size:35px;
+    flex-wrap: wrap;
+
+   }
+
+   
+
+    .wsapaside {
+        position:fixed;
+          left: 76%;
+          bottom: 8%; }
+
+     #footerindex {
+            grid-template-rows: repeat(3,1fr).5fr ;
+            grid-template-columns:1fr;
+            grid-template-areas: 
+            "nosotros" 
+            "ayuda" 
+            "siguenos "
+            "derechosautor "; }
+}
+
+
+  
+@media (max-width :480px) {
+   
+    .logo {
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+    }
+
+       .navbartop  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+       }
+       .imgnosotros2 {
+        width: 350px;
+     }
+     
+     .mapaubicacion2 {
+         width: 350px;
+        }
+        .infocontacto {
+            font-size:30px;
+            flex-wrap: wrap;
+        
+           }
+        .wsapaside {
+            position:fixed;
+              left: 72%;
+              bottom: 8%; }
+}
+  
+@media (max-width :320px) {
+    
+    .imgnosotros2 {
+        width: 200px;
+     }
+     
+     .mapaubicacion2 {
+         width: 200px;
+        }
+
+
+.infocontacto {
+    font-size:20px;
+    flex-wrap: wrap;
+
+   }
+
+     .wsapaside {
+            position:fixed;
+              left: 68%;
+              bottom: 8%; }
+
+     }
