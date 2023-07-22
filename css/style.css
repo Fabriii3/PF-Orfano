@@ -319,6 +319,11 @@ font-family:'Noto Serif', serif; ;
         "footer footer footer";
 }
 
+#logoimg {
+    height:200px ;
+    width: 200px;
+
+}
 .imgnosotros2 {
    height:500px;
 }
@@ -350,6 +355,12 @@ font-family:'Noto Serif', serif; ;
 
 
 @media (max-width :1024px) {
+    #logoimg {
+        height:400px ;
+        width: 600px;
+
+    }
+
     #mainindex {
         grid-area: main;
         grid-template-rows: repeat(3, 1fr);
@@ -418,6 +429,7 @@ font-family:'Noto Serif', serif; ;
 
 }
 @media (min-width :768px)  and  (max-width :968px) {
+ 
     .imgnosotros2 {
         width: 500px;
      }
@@ -433,7 +445,11 @@ font-family:'Noto Serif', serif; ;
 }
   
 @media (max-width :768px) {
-   
+    #logoimg {
+        height:300px ;
+        width: 600px;
+
+    }
     .textnosotros h3 {
         font-size: 50px;
     }
@@ -461,10 +477,6 @@ font-family:'Noto Serif', serif; ;
     }
     
 @media (min-width :600px)  and  (max-width :630px) {
-    .navbartop {
-        font-size: 12px;
-      }
-
     .wsapaside {
         position:fixed;
           left: 76%;
@@ -472,9 +484,12 @@ font-family:'Noto Serif', serif; ;
 }
 
 @media (max-width :600px) {
-   .navbartop {
-     font-size: 14px;
-   }
+    #logoimg {
+        height:300px ;
+        width: 400px;
+
+    }
+
    .textnosotros h3 {
     font-size: 50px;
 }
@@ -525,18 +540,12 @@ font-family:'Noto Serif', serif; ;
 
   
 @media (max-width :480px) {
-   
-    .logo {
-      flex-direction: row;
-      flex-wrap: wrap;
-      
-    }
+    #logoimg {
+        height:300px ;
+        width: 400px;
 
-       .navbartop  {
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-       }
+    }
+   
        .imgnosotros2 {
         width: 350px;
      }
@@ -555,7 +564,42 @@ font-family:'Noto Serif', serif; ;
               bottom: 8%; }
 }
   
+@media (min-width : 320px)  and  (max-width :453px) {
+    #logoimg {
+        height: 170px ;
+        width: 250px;
+
+    }
+    
+    .imgnosotros2 {
+        width: 200px;
+     }
+     
+     .mapaubicacion2 {
+         width: 200px;
+        }
+
+
+.infocontacto {
+    font-size:20px;
+    flex-wrap: wrap;
+
+   }
+
+     .wsapaside {
+            position:fixed;
+              left: 68%;
+              bottom: 8%; }
+
+     }
+
 @media (max-width :320px) {
+
+    #logoimg {
+        height: 170px ;
+        width: 250px;
+
+    }
     
     .imgnosotros2 {
         width: 200px;
