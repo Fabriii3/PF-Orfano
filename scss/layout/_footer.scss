@@ -1,0 +1,94 @@
+#footerindex {
+    background-color:#E3F2FD;
+    display: grid;
+    grid-area:footer;
+    grid-template-rows: 1fr 0.5fr ;
+    grid-template-columns: 2fr 2fr 0.5;
+    grid-template-areas: 
+    "nosotros ayuda siguenos "
+    "derechosautor derechosautor derechosautor";
+    padding-top: 10px;
+    bottom:0;
+    width: 100%;   
+
+    h4{
+      font-size: 1.5rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+      li{ 
+         font-size: 1.1rem;
+        font-family: Arial, sans-serif;
+          }
+      
+   }
+ 
+
+   #rpmcompeticion{
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; 
+   }
+
+   #ayudaft{
+    grid-area: ayuda;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; 
+  }
+  
+
+  #siguenosft{
+      grid-area: siguenos;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center; 
+
+    .redesft2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        padding-top: 30px; 
+
+       a{
+         .img-redes{
+            height:45px;
+            padding: 5px;
+       }
+    }
+  }
+}
+
+#derechosautor{
+    display: grid;
+    grid-area:derechosautor; 
+  }
+   .derechosautor2{
+    background-color:#E3F2FD;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  
+   }
+         h5 { font-size: 1rem;
+            font-family:'Noto Serif', serif; 
+          }
+
+          li {
+            margin-left:30px;
+          }
+  }
+
+
+
+
+

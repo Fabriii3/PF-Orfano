@@ -1,770 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@1,87,562&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@1,87,562&family=Roboto&display=swap");
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@1,87,562&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@1,87,562&family=Roboto&display=swap');
-
-
-a { 
-    text-decoration:none;
-    color: black;
-
+a {
+  text-decoration: none;
+  color: black;
 }
-    
+
 li {
- list-style-type: none;
+  list-style-type: none;
 }
 
-html{
-    scroll-behavior: smooth;
-} 
+html {
+  scroll-behavior: smooth;
+}
 
-
- /* Body index page1 */
 #Paginaprincipal {
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "main main main "
-    "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header" "main main main" "main main main " "footer footer footer";
 }
-
-/* body comprar page2 */
-
-/* header index */
 
 #headerindex {
-    display: grid;
-    grid-area: header;
-    background-color: #E3F2FD;
-
+  display: grid;
+  grid-area: header;
+  background-color: #E3F2FD;
 }
-
+#headerindex div #logo {
+  padding: 10px;
+  padding-left: 150px;
+}
+#headerindex div #logo a #logoimg {
+  height: 100px;
+  width: 270px;
+}
 #headerindex a {
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif; 
-    font-weight: 600;
-
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
-
-#logo {
-    padding: 10px;
-    padding-left: 150px;
-}
-
-#logoimg {
-    height: 100px; 
-    width: 270px;
-}
-
-
-/* main index PAGE1 */
 
 #mainindex {
-    height: 100%;
-    display: grid;
-    grid-area: main;
-  grid-template-rows: 0.5fr repeat(2,1fr) ;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-areas: 
-  "banner banner"
-  "sobrenosotros sobrenosotros"
-  "mapa contacto "
-  ;
+  height: 100%;
+  display: grid;
+  grid-area: main;
+  grid-template-rows: 0.5fr repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "banner banner" "sobrenosotros sobrenosotros" "mapa contacto ";
 }
-
-#carrousel-img-banner {
-grid-area: banner;
+#mainindex #carrousel-img-banner {
+  grid-area: banner;
 }
-
-#carrousel-img-banner img {
-    height: 400px;
-    width: 100%;
+#mainindex #carrousel-img-banner img {
+  height: 400px;
+  width: 100%;
 }
 
 #nosotros {
-  grid-area:sobrenosotros;
+  grid-area: sobrenosotros;
 }
-
-.sobrenosotros{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    margin: 2px ;
-    display: flex;
-    flex-direction: row;
+#nosotros .sobrenosotros {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
 }
-
-.sobrenosotros h3{
-    margin-top: 10px;
-    font-weight: 600;
-    text-align: center;
-    font-size:3.5rem; 
-    font-family: Roboto, sans-serif;
-    padding-top: 200px;
+#nosotros .sobrenosotros h3 {
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Roboto, sans-serif;
+  padding-top: 200px;
 }
-
-.textnosotros {
-background-repeat: no-repeat;
-flex-basis: 50%;
-justify-content: center;
-align-items: center;
-text-align: center;
-border-radius: 10px;
+#nosotros .sobrenosotros .textnosotros {
+  background-repeat: no-repeat;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
 }
-
-.textnosotros p {
-font-weight: 600;
- text-align: center;
- font-size: 1.3rem;
+#nosotros .sobrenosotros .textnosotros p {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.7rem;
 }
-
-.leer-mas-btn {
-    background-color: #E3F2FD;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    border: 0%;
-    padding:30px;
-    border-radius: 30px;
+#nosotros .sobrenosotros .textnosotros a .leer-mas-btn {
+  background-color: #E3F2FD;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 0%;
+  padding: 30px;
+  border-radius: 30px;
 }
-
-.imgnosotros {
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30px;
+#nosotros .sobrenosotros .imgnosotros {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
 }
-
-.imgnosotros2 {
-   height: 950px;
-   width: 1000px;
-   border-radius: 10px;
-
+#nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
+  height: 850px;
+  width: 900px;
+  border-radius: 10px;
 }
-
 
 .mapaubicacion {
-    grid-area: mapa ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-  
-   .mapaubicacion2 {
-      height: 900px;
-      width: 1000px;
-      border-radius: 30px;
-      padding: 20px;
-   }
-
-.infocontacto h3{
-    font-family: Roboto, sans-serif;
-    font-size:4rem; 
-    text-align: center;
-    margin-bottom: 40px;
- 
+  grid-area: mapa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mapaubicacion .mapaubicacion2 {
+  height: 900px;
+  width: 1000px;
+  border-radius: 30px;
+  padding: 20px;
 }
 
-.infocontacto {  
-    grid-area: contacto;
-     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    justify-content: center;
-    align-content: center; 
-} 
-
-.infocontacto p {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: 600;
+span .wsapaside {
+  position: fixed;
+  left: 93%;
+  bottom: 15%;
 }
-.infocontacto span {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-}
- 
- 
-
-
-.direccion {
-background-color: #E3F2FD;
-    margin-top: 50px;
-    border-radius: 10px ;
-    border: 2px solid black;
-    padding: 15px;
+span .wsapaside .imglogowsap {
+  height: 70px;
+  width: 100px;
+  border-radius: 80px;
 }
 
-.celular {
-    background-color: #E3F2FD;
-    margin-top: 50px;
-    border-radius: 10px ;
-    border: 2px solid black;
-    padding: 15px;
+.infocontacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  justify-content: center;
+  align-content: center;
 }
-
-.telefono{
-    background-color: #E3F2FD;
-    margin-top: 50px;
-    border-radius: 10px ;
-    border: 2px solid black;
-    padding: 15px;
+.infocontacto .contactanostitulo {
+  font-family: Roboto, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
-
-
-.email {
-    background-color: #E3F2FD;
-    margin-top: 30px;
-    border-radius: 10px ;
-    border: 2px solid black;
-    padding: 15px;
+.infocontacto .contenedor-contacto .direccion {
+  background-color: #E3F2FD;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
 }
-
-
-.wsapaside {
-    position:fixed;
-      left: 93%;
-      bottom: 15%;   
-  }
-  .imglogowsap {
-      height:70px;
-      width: 100px;
-      border-radius: 80px;
-  }
-
-/* --------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Main comprar page2*/
-.catalogoproductos {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.infocontacto .contenedor-contacto .direccion p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
-
-.titulocatalgo {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    margin: 30px;
-    font-size: 30px;
+.infocontacto .contenedor-contacto .direccion span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
-
-.producto img {
-    width: 220px;
-    height: 280px;
-    border-radius: 30px;
+.infocontacto .contenedor-contacto .celular {
+  background-color: #E3F2FD;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
 }
-
-.producto {
-    margin: 50px;
+.infocontacto .contenedor-contacto .celular p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
-
-.producto p {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+.infocontacto .contenedor-contacto .celular span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
-
-/* footer index*/
+.infocontacto .contenedor-contacto .telefono {
+  background-color: #E3F2FD;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
+}
+.infocontacto .contenedor-contacto .telefono p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.infocontacto .contenedor-contacto .telefono span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.infocontacto .contenedor-contacto .email {
+  background-color: #E3F2FD;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
+}
+.infocontacto .contenedor-contacto .email p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.infocontacto .contenedor-contacto .email span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
 
 #footerindex {
-    background-color:#E3F2FD;
-    display: grid;
-    grid-area:footer;
-    grid-template-rows: 1fr 0.5fr ;
-    grid-template-columns: 2fr 2fr 0.5;
-    grid-template-areas: 
-    "nosotros ayuda siguenos "
-    "derechosautor derechosautor derechosautor";
-    padding-top: 10px;
-    bottom:0;
-    width: 100%;   
+  background-color: #E3F2FD;
+  display: grid;
+  grid-area: footer;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-columns: 2fr 2fr 0.5;
+  grid-template-areas: "nosotros ayuda siguenos " "derechosautor derechosautor derechosautor";
+  padding-top: 10px;
+  bottom: 0;
+  width: 100%;
 }
-
 #footerindex h4 {
-    font-size: 1.2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
+#footerindex h4 li {
+  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+}
+#footerindex #rpmcompeticion {
+  grid-area: nosotros;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+#footerindex #ayudaft {
+  grid-area: ayuda;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+#footerindex #siguenosft {
+  grid-area: siguenos;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+#footerindex #siguenosft .redesft2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-top: 30px;
+}
+#footerindex #siguenosft .redesft2 a .img-redes {
+  height: 45px;
+  padding: 5px;
+}
+#footerindex #derechosautor {
+  display: grid;
+  grid-area: derechosautor;
+}
+#footerindex .derechosautor2 {
+  background-color: #E3F2FD;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+#footerindex h5 {
+  font-size: 1rem;
+  font-family: "Noto Serif", serif;
+}
 #footerindex li {
-    font-size: 1rem;
-    font-family: Arial, sans-serif;
+  margin-left: 30px;
 }
-
-
-#rpmcompetición {
-    grid-area: nosotros;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center; 
-}
-
-#ayudaft {
-    grid-area: ayuda;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center; 
-}
-
-#siguenosft {
-    grid-area: siguenos;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center; 
-}
-
- .redesft2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    padding-top: 30px;   
-} 
-
-.img-redes{
-   height:45px;
-   padding: 5px;
-} 
-
-
- #derechosautor  {
-    display: grid;
-    grid-area:derechosautor; 
-
- }
-
- .derechosautor2 {
-    background-color:#E3F2FD;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
- }
-
- #derechosautor div h5{ 
-font-size: 1.1rem;
-font-family:'Noto Serif', serif; ;
- }
-
- 
- 
 
 /* Escritorio primero o destok first */
-
-@media (max-width :1200px) {
-
-    #mainindex {
-      grid-template-rows:repeat(4,1fr) ;
-      grid-template-columns: 1fr ;
-      grid-template-areas: 
-      "banner"
-      "sobrenosotros"
-      "mapa"
-      "contacto"
-      ;
-    }
-
-    #headerindex a {
-        font-size: 1.0rem;
-        margin-left: 10px;
-    }
-
-#logo {
+@media (max-width: 1200px) {
+  #mainindex {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
+  }
+  #headerindex a {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  #logo {
     margin-top: 20px;
-
-}
-
-#navbar-top {
+  }
+  #navbar-top {
     flex-direction: row;
-
-}
-
-.sobrenosotros{
+  }
+  .sobrenosotros {
     flex-direction: column;
-}
-
-
-.imgnosotros2 {
-   height:950px;
-   width: 700px;
-   padding: 10px;
-  
-}
-
-.mapaubicacion2 {
+  }
+  .imgnosotros2 {
+    height: 950px;
+    width: 700px;
+    padding: 10px;
+  }
+  .mapaubicacion2 {
     height: 900px;
     width: 700px;
     padding-top: 100px;
-  
-   }
-
-
-
+  }
 }
-
-@media (max-width :1024px) {
-    #logoimg {
-        height:400px ;
-        width: 600px;
-
-    }
-
-    #mainindex {
-        grid-area: main;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "banner"
-            "sobrenosotros"
-            "mapa"
-            "contacto";
-    }
-
-    #carrousel-img-banner img {
-        height: 800px;
-        width: 100%;
-    }
-
-    .sobrenosotros {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 16px;
-        flex-direction: column;
-    }
-    .textnosotros h3 {
-        font-size: 50px;
-    }
-
-  .textnosotros ul li {
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-      
-        }
-
-    .imgnosotros2 {
-        width: 900px;
-    }
-
-    .mapaubicacion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-
-    .mapaubicacion2 {
-        height: 900px;
-        width: 950px;
-        
-
-    }
-
-    .wsapaside {
-        position: fixed;
-        left: 86%;
-        bottom: 10%;
-    }
-
-    .infocontacto h3 {
-        font-size: 50px;
-        margin-bottom: 50px;
-     
-    }
-
-    .infocontacto {
-        display: flex;
-        font-size: 25px;
-
-    }
-
-
-}
-@media (min-width :768px)  and  (max-width :968px) {
-    #logo {
-        padding-left: 100px;
-    }
-
-    .imgnosotros2 {
-        height: 100%;
-        width: 100%;
-    
-     }
-     
-     .mapaubicacion2 {
-        height: 100%;
-         width: 100%;
-      
-        }
-
-    .wsapaside {
-        position:fixed;
-          left: 86%;
-          bottom: 15%; }
-}
-  
-@media (max-width :768px) {
-    #logoimg {
-        height:300px ;
-        width: 600px;
-        padding-right: 100px;
-
-    }
-    .textnosotros h3 {
-        font-size: 50px;
-    }
-
-  .textnosotros ul li {
-        justify-content: center;
-        align-items: center;
-        font-size: 1.3rem;
-      
-        }
-
-
-    .imgnosotros2 {
-        width: 500px;
-     }
-     
-     .mapaubicacion2 {    
-         width: 500px;
-        }
-
-        .wsapaside {
-            position:fixed;
-              left: 80%;
-              bottom: 6%; }
-    }
-    
-@media (min-width :600px)  and  (max-width :630px) {
-    .wsapaside {
-        position:fixed;
-          left: 76%;
-          bottom: 8%; }
-}
-
-@media (max-width :600px) {
-    #logoimg {
-        height:300px ;
-        width: 400px;
-        padding-right: 105px;
-
-    }
-
-   .textnosotros h3 {
+@media (max-width: 1024px) {
+  #logoimg {
+    height: 400px;
+    width: 600px;
+  }
+  #mainindex {
+    grid-area: main;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
+  }
+  #carrousel-img-banner img {
+    height: 800px;
+    width: 100%;
+  }
+  .sobrenosotros {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    flex-direction: column;
+  }
+  .textnosotros h3 {
     font-size: 50px;
+  }
+  .textnosotros ul li {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .imgnosotros2 {
+    width: 900px;
+  }
+  .mapaubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mapaubicacion2 {
+    height: 900px;
+    width: 950px;
+  }
+  .wsapaside {
+    position: fixed;
+    left: 86%;
+    bottom: 10%;
+  }
+  .infocontacto h3 {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .infocontacto {
+    display: flex;
+    font-size: 25px;
+  }
 }
-
-.imgnosotros2 {
-    width: 400px;
- }
- 
- .mapaubicacion2 {    
-     width: 400px;
-    }
-
-.textnosotros ul li {
+@media (min-width: 768px) and (max-width: 968px) {
+  #logo {
+    padding-left: 100px;
+  }
+  .imgnosotros2 {
+    height: 100%;
+    width: 100%;
+  }
+  .mapaubicacion2 {
+    height: 100%;
+    width: 100%;
+  }
+  .wsapaside {
+    position: fixed;
+    left: 86%;
+    bottom: 15%;
+  }
+}
+@media (max-width: 768px) {
+  #logoimg {
+    height: 300px;
+    width: 600px;
+    padding-right: 100px;
+  }
+  .textnosotros h3 {
+    font-size: 50px;
+  }
+  .textnosotros ul li {
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-  
-    }
-
-   .infocontacto h3{
+  }
+  .imgnosotros2 {
+    width: 500px;
+  }
+  .mapaubicacion2 {
+    width: 500px;
+  }
+  .wsapaside {
+    position: fixed;
+    left: 80%;
+    bottom: 6%;
+  }
+}
+@media (min-width: 600px) and (max-width: 630px) {
+  .wsapaside {
+    position: fixed;
+    left: 76%;
+    bottom: 8%;
+  }
+}
+@media (max-width: 600px) {
+  #logoimg {
+    height: 300px;
+    width: 400px;
+    padding-right: 105px;
+  }
+  .textnosotros h3 {
+    font-size: 50px;
+  }
+  .imgnosotros2 {
+    width: 400px;
+  }
+  .mapaubicacion2 {
+    width: 400px;
+  }
+  .textnosotros ul li {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .infocontacto h3 {
     font-size: 30px;
- 
-   }
-
-   .infocontacto {
-    font-size:35px;
+  }
+  .infocontacto {
+    font-size: 35px;
     flex-wrap: wrap;
-
-   }
-
-   
-
-    .wsapaside {
-        position:fixed;
-          left: 76%;
-          bottom: 8%; }
-
-     #footerindex {
-            grid-template-rows: repeat(3,1fr).5fr ;
-            grid-template-columns:1fr;
-            grid-template-areas: 
-            "nosotros" 
-            "ayuda" 
-            "siguenos "
-            "derechosautor "; }
+  }
+  .wsapaside {
+    position: fixed;
+    left: 76%;
+    bottom: 8%;
+  }
+  #footerindex {
+    grid-template-rows: repeat(3, 1fr) 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nosotros" "ayuda" "siguenos " "derechosautor ";
+  }
+}
+@media (max-width: 480px) {
+  #logoimg {
+    height: 200px;
+    width: 300px;
+  }
+  .imgnosotros2 {
+    width: 350px;
+  }
+  .mapaubicacion2 {
+    width: 350px;
+  }
+  .infocontacto h3 {
+    font-size: 3rem;
+  }
+  .infocontacto p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .infocontacto span {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .wsapaside {
+    position: fixed;
+    left: 68%;
+    bottom: 8%;
+  }
+}
+@media (min-width: 320px) and (max-width: 453px) {
+  #logoimg {
+    height: 170px;
+    width: 250px;
+  }
+  .imgnosotros2 {
+    width: 200px;
+  }
+  .mapaubicacion2 {
+    width: 200px;
+  }
+  .infocontacto {
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+  .wsapaside {
+    position: fixed;
+    left: 68%;
+    bottom: 8%;
+  }
+}
+@media (max-width: 320px) {
+  #logoimg {
+    height: 100px;
+    width: 200px;
+  }
+  .leer-mas-btn {
+    margin-bottom: 20px;
+  }
+  .imgnosotros2 {
+    width: 200px;
+  }
+  .mapaubicacion2 {
+    width: 200px;
+  }
+  .infocontacto h3 {
+    font-size: 3rem;
+  }
+  .infocontacto p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .infocontacto span {
+    font-size: 1rem;
+  }
+  .imglogowsap {
+    height: 200px;
+    width: 50px;
+  }
+  .wsapaside {
+    position: fixed;
+    left: 52%;
+    bottom: 8%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  #logo {
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 150px;
+  }
+  #logoimg {
+    height: 100px;
+    width: 270px;
+  }
+  #mainindex {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
+  }
+  .sobrenosotros {
+    flex-direction: column;
+  }
+  .imgnosotros2 {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+  .mapaubicacion2 {
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+  }
 }
 
-
-  
-@media (max-width :480px) {
-
-    #logoimg {
-        height: 200px ;
-        width: 300px;
-
-    }
-
-       .imgnosotros2 {
-        width: 350px;
-     }
-     
-     .mapaubicacion2 {
-         width: 350px;
-        }
-
-           .infocontacto h3 { 
-            font-size: 3rem; 
-        }
-        
-        .infocontacto p {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        .infocontacto span {
-            font-size: 1.0rem;
-            margin-bottom: 10px;
-        }
-
-        .wsapaside {
-            position:fixed;
-              left: 68%;
-              bottom: 8%; }
-}
-  
-@media (min-width : 320px)  and  (max-width :453px) {
-    #logoimg {
-        height: 170px ;
-        width: 250px;
-
-    }
-    
-    .imgnosotros2 {
-        width: 200px;
-     }
-     
-     .mapaubicacion2 {
-         width: 200px;
-        }
-
-
-.infocontacto {
-    font-size:20px;
-    flex-wrap: wrap;
-
-   }
-
-     .wsapaside {
-            position:fixed;
-              left: 68%;
-              bottom: 8%; }
-
-     }
-
-@media (max-width :320px) {
-      #logoimg {
-           height: 100px;
-           width: 200px;
-      }
-    
-    .leer-mas-btn {
-        margin-bottom: 20px;
-    }
-
-    .imgnosotros2 {
-        width: 200px;
-     }
-     
-     .mapaubicacion2 {
-         width: 200px;
-        }
-
-
-        .infocontacto h3 { 
-            font-size: 3rem; 
-        }
-        
-        .infocontacto p {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        .infocontacto span {
-            font-size: 1.0rem;
-        }
-         
-        .imglogowsap {
-           height:200px ;
-           width: 50px;
-        }
-        
-     .wsapaside {
-            position:fixed;
-              left: 52%;
-              bottom: 8%; }
-
-     }
-
-
-     @media (min-width :1201px) and (max-width :1400px) {
-        #logo {
-            margin-top:50px;
-            padding: 10px;
-            padding-left: 150px;
-        }
-        
-        #logoimg {
-            height: 100px; 
-            width: 270px;
-        }
-
-        #mainindex {
-            grid-template-rows:repeat(4,1fr) ;
-            grid-template-columns: 1fr ;
-            grid-template-areas: 
-            "banner"
-            "sobrenosotros"
-            "mapa"
-            "contacto"
-            ;
-          }
-
-          
-      .sobrenosotros {
-        flex-direction: column;
-      }
-
-      .imgnosotros2 {
-        height:100%;
-        width: 100%;
-        padding: 10px;
-       
-     }
-     
-     .mapaubicacion2 {
-        height:100%;
-        width: 100%;
-         padding-top: 100px;
-       
-        }
-     
-    
-     }
-
+/*# sourceMappingURL=style.css.map */

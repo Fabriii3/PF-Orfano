@@ -1,0 +1,8 @@
+#Paginaprincipal {
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main "
+    "footer footer footer";
+}
