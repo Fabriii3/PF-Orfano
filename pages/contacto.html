@@ -48,73 +48,62 @@
       </div> 
       </header>
 
-<main> 
-  <form action="" method="post" enctype="text/plain"> 
-    <fieldset>
-      <fieldset>
-        <legend> DATOS PERSONALES </legend>
-          <div>
-            <label for="nombre"> Nombre :</label>
-        <input type="text" id="nombre" placeholder="Ingrese su nombre" /> 
-          </div>
-         <div>
-        <label for="apellido"> Apellido : </label>
-        <input type="text" id="apellido" placeholder="ingrese su apellido" /> 
-      </div>
-      <div>
-        <label for="correo"> Email : </label>
-        <input type="email" id="email" required placeholder="Ingrese su correo"/> 
-      </div>
-      <div>
-        <label for="pass"> Contraseña : </label>
-        <input type="password" id="pass" requerid placeholder="Maximo 10 caracteres"/> 
-      </div>
-    </fieldset>
+<main id="main-contacto"> 
 
-      <fieldset> 
-        <legend> OTROS DATOS </legend>
-        
-        
-        <div> <label for="fnac">Fecha de Nacimiento :</label>
-          <input id="fnac" name="fecha_nac" type="date" required>
+    <section class="d-flex justify-content-center align-items-center">
+      <div id="contacto" class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4 p-4">
+        <div class="mb-4 d-flex  justify-content-center align-items-center">
+          <p class="bi bi-chat-left-quote"> Contacto </p>
         </div>
-      
-        
+        <div >
+          <form id="contacto">
 
-        <div> 
-              <label for="">Genero :</label>
-            <label for="generom">Masculino</label>
-            <input type="radio" name="genero" id="generom" value="Maculino">
-            <label for="generof">Femenino</label>
-            <input type="radio" name="genero" id="generom" value="Femenino">
-          <label for="otro">Otro</label>
-          <input type="radio" name="genero" id="otro" value="Otro" >
+            <div >
+              <div>
+                <label for="nombre" class="bi bi-person-fill"> Nombre Completo </label>
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese Nombre y Apellido" required>
+                <div class="nombre text-danger "></div>
+              </div>
+
+              <div >
+                <label for="numero"> <i class="bi bi-person-bounding-box"></i> Número</label>
+                <input type="tel" class="form-control" name="numero" id="numero" placeholder="Ingrese su número" required>
+                <div class="apellido text-danger"></div>
+              </div>
+           
+            
+            <div >
+              <label for="correo" class="bi bi-envelope-fill"> Mail</label>
+              <input id="mail" class="form-control" name="mail" type="email"  placeholder="ejemplo@mail.com" required>
+              <div class="correo text-danger"></div>
+            </div>
+
+            <div >
+              <label for="mensaje"> <i class="bi bi-chat-right-dots-fill" required></i> Mensaje</label>
+              <textarea name="mensaje" id="mensaje" class="form-control" cols="20" rows="10" placeholder="Ingrese su Mensaje"></textarea>
+              <div class="mensaje text-danger"></div>
+            </div>
+
+            <div >
+              <button id="boton" class="col-12 btn  d-flex justify-content-center ">
+                <span>Enviar</span>
+            </div>
+
+          </form>
         </div>
-      </fieldset>
 
-      <fieldset>
-        <legend>INGRESE UN COMENTARIO</legend>
-        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
-      </fieldset>
+    </section>
 
-      <div>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar todo">
-      </div>
-      </fieldset>
-  </form>
 
-  <section> 
-    <aside>
-      <a class="wsapaside" href="https://web.whatsapp.com/" target="_blank">
-        <img class="imglogowsap" src="../assets/images/wsap.png" alt="WhatsApp" > </a>
-    </aside>
-   </section> 
+  <span>
+    <a class="wsapaside" href="https://web.whatsapp.com/" target="_blank"> 
+      <img class="imglogowsap" src="../assets/images/wsp2.svg" alt="WhatsApp"> </a> 
+    </span> 
+
    
 </main>
 
 <footer id="footerindex">
-  <!-- <div id="ftboxflex"> -->
      <div id="rpmcompetición">
        <h4> Rpm Competicion </h4>
        <ul class="nosotrosft">
@@ -158,7 +147,7 @@
        </div>
      </div>
  
-   <!-- </div> -->
+  
  </footer>
 
  <script

@@ -1,4 +1,30 @@
-
+#main-contacto{
+  section{
+    padding: 20px;
+    div{
+        div{
+            p{ 
+               font-size: 4rem;
+               font-style: italic;
+               font-weight: bold;
+            }
+        }
+        div{
+            #contacto{
+                div{
+                    padding: 5px;
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+            }
+            #boton {
+                background-color: #E3F2FD;
+            }
+        }
+    }
+  }
+}
 
 
 
