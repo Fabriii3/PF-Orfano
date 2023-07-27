@@ -1,4 +1,8 @@
-#mainindex{
+#headerindex{
+    display: grid;
+    grid-area: header;}
+
+    #mainindex{
     height: 100%;
     display: grid;
     grid-area: main;

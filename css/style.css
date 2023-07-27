@@ -20,8 +20,6 @@ html {
 }
 
 #headerindex {
-  display: grid;
-  grid-area: header;
   background-color: #E3F2FD;
 }
 #headerindex div #logo {
@@ -34,8 +32,327 @@ html {
 }
 #headerindex a {
   font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#headerindex {
+  display: grid;
+  grid-area: header;
+}
+
+#mainindex {
+  height: 100%;
+  display: grid;
+  grid-area: main;
+  grid-template-rows: 0.5fr repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "banner banner" "sobrenosotros sobrenosotros" "mapa contacto ";
+}
+#mainindex #carrousel-img-banner {
+  grid-area: banner;
+}
+#mainindex #carrousel-img-banner img {
+  height: 400px;
+  width: 100%;
+}
+
+#nosotros {
+  grid-area: sobrenosotros;
+}
+#nosotros .sobrenosotros {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+}
+#nosotros .sobrenosotros h3 {
+  margin-top: 10px;
   font-weight: 600;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Roboto, sans-serif;
+  padding-top: 200px;
+}
+#nosotros .sobrenosotros .textnosotros {
+  background-repeat: no-repeat;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+#nosotros .sobrenosotros .textnosotros p {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.7rem;
+}
+#nosotros .sobrenosotros .textnosotros a .leer-mas-btn {
+  background-color: #E3F2FD;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 0%;
+  padding: 30px;
+  border-radius: 30px;
+}
+#nosotros .sobrenosotros .imgnosotros {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+#nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
+  height: 850px;
+  width: 900px;
+  border-radius: 10px;
+}
+
+.mapaubicacion {
+  grid-area: mapa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mapaubicacion .mapaubicacion2 {
+  height: 900px;
+  width: 1000px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.infocontacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  justify-content: center;
+  align-content: center;
+}
+.infocontacto .contactanostitulo {
+  font-family: Roboto, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.infocontacto .contenedor-contacto .direccion {
+  background-color: #E3F2FD;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
+}
+.infocontacto .contenedor-contacto .direccion p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.infocontacto .contenedor-contacto .direccion span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.infocontacto .contenedor-contacto .celular {
+  background-color: #E3F2FD;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
+}
+.infocontacto .contenedor-contacto .celular p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.infocontacto .contenedor-contacto .celular span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.infocontacto .contenedor-contacto .telefono {
+  background-color: #E3F2FD;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
+}
+.infocontacto .contenedor-contacto .telefono p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.infocontacto .contenedor-contacto .telefono span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.infocontacto .contenedor-contacto .email {
+  background-color: #E3F2FD;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
+}
+.infocontacto .contenedor-contacto .email p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.infocontacto .contenedor-contacto .email span {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+span .wsapaside {
+  position: fixed;
+  left: 93%;
+  bottom: 15%;
+}
+
+span .wsapaside .imglogowsap {
+  height: 70px;
+  width: 100px;
+  border-radius: 80px;
+}
+
+#maincomprar .catalogoproductos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#maincomprar .catalogoproductos .titulocatalgo {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin: 30px;
+  font-size: 30px;
+}
+#maincomprar .catalogoproductos .producto {
+  margin: 50px;
+}
+#maincomprar .catalogoproductos .producto img {
+  width: 220px;
+  height: 280px;
+  border-radius: 30px;
+}
+#maincomprar .catalogoproductos .producto p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+#maincomprar span .wsapaside {
+  position: fixed;
+  left: 93%;
+  bottom: 15%;
+}
+#maincomprar span .wsapaside .imglogowsap {
+  height: 70px;
+  width: 100px;
+  border-radius: 80px;
+}
+
+#main-nosotros {
+  background-color: #E3F2FD;
+}
+#main-nosotros .section-img {
+  background-image: url("../assets/images/backgroudnosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-nosotros .section-img div .titulo-nosotros {
+  color: aliceblue;
+  font-size: 4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  text-align: center;
+}
+#main-nosotros .section-img div ul li {
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  text-align: justify;
+  text-align: center;
+}
+#main-nosotros #card-nosotros .titulo-nuestro-equipo {
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: justify;
+  text-align: center;
+}
+#main-nosotros #card-nosotros div div {
+  background-color: black;
+}
+#main-nosotros #card-nosotros div div .card-titulo {
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+}
+#main-nosotros #card-nosotros div div .card-texto {
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  text-align: center;
+}
+#main-nosotros #card-nosotros div div div #imagen-card {
+  height: 450px;
+  width: 630px;
+  border-radius: 5px;
+}
+#main-nosotros span .wsapaside {
+  position: fixed;
+  left: 93%;
+  bottom: 15%;
+}
+#main-nosotros span .wsapaside .imglogowsap {
+  height: 70px;
+  width: 100px;
+  border-radius: 80px;
+}
+
+.main-fqa section div p {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+}
+.main-fqa section div div nav div form input {
+  padding: 20px;
+  padding-right: 400px;
+  border: 2px solid black;
+}
+.main-fqa section div div nav div form .boton {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black;
+}
+.main-fqa section div li {
+  color: black;
+  padding-left: 30%;
+  font-size: 1.3rem;
+  text-align: start;
+  font-style: italic;
+  font-weight: bold;
+}
+.main-fqa section div li img {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+.main-fqa span .wsapaside {
+  position: fixed;
+  left: 93%;
+  bottom: 15%;
+}
+.main-fqa span .wsapaside .imglogowsap {
+  height: 70px;
+  width: 100px;
+  border-radius: 80px;
 }
 
 #footerindex {
@@ -51,11 +368,13 @@ html {
 }
 #footerindex h4 {
   font-size: 1.5rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
 }
 #footerindex h4 li {
   font-size: 1.1rem;
-  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
 }
 #footerindex #rpmcompeticion {
   grid-area: nosotros;
