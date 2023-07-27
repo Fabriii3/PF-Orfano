@@ -16,3 +16,15 @@
 }
 
 
+@mixin wsp-alcostado {
+    span .wsapaside {
+        position: fixed;
+        left: 93%;
+        bottom: 15%;
+      }
+      span .wsapaside .imglogowsap {
+        height: 70px;
+        width: 100px;
+        border-radius: 80px;
+      }
+}

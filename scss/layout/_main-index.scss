@@ -87,22 +87,6 @@
       }
     }
 
-
-    span {
-        .wsapaside {
-            position:fixed;
-            left: 93%;
-            bottom: 15%;  
-            
-            .imglogowsap{
-                height:70px;
-                width: 100px;
-                border-radius: 80px;
-            }
-        }
-    }
-
-
  .infocontacto {
     grid-area: contacto;
      display: flex;
@@ -134,4 +118,4 @@
         }
     }
  
-    
+    @include wsp-alcostado ;
