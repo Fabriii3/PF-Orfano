@@ -35,6 +35,11 @@ html {
   font-style: italic;
   font-weight: bold;
 }
+#headerindex a:hover {
+  color: #E3F2FD;
+  background-color: black;
+  border-radius: 10px;
+}
 
 #headerindex {
   display: grid;
@@ -95,6 +100,11 @@ html {
   font-size: 1.2rem;
   border: 0%;
   padding: 30px;
+  border-radius: 30px;
+}
+#nosotros .sobrenosotros .textnosotros a .leer-mas-btn:hover {
+  background-color: black;
+  color: #E3F2FD;
   border-radius: 30px;
 }
 #nosotros .sobrenosotros .imgnosotros {
