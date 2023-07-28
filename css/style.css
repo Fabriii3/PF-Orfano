@@ -849,13 +849,17 @@ span .wsapaside .imglogowsap {
   }
 }
 @media (max-width: 320px) {
-  #headerindex div #logo a #logoimg {
+  #headerindex div #logo {
     height: 150px;
-    width: 200px;
+    width: 325px;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 200px;
+    width: 100%;
   }
   #carrousel-img-banner {
     height: 600px;
-    width: 320px;
+    width: 325px;
   }
   .leer-mas-btn {
     margin-bottom: 20px;
@@ -881,7 +885,7 @@ span .wsapaside .imglogowsap {
   }
   span .wsapaside {
     position: fixed;
-    left: 50%;
+    left: 60%;
     bottom: 6%;
   }
   #maincomprar span .wsapaside {
