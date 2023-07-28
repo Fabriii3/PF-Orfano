@@ -28,13 +28,24 @@
 
 }
 
-.sobrenosotros{
-    flex-direction: column;
+#carrousel-img-banner{
+    height: 300px;
+    width: 100%;
 }
 
+#nosotros{
+    padding-bottom: 20px;
+ .sobrenosotros {
+    display: flex;
+    flex-direction: column;
+     .textnosotros {
+        padding: 10px;
+    }
+}
+}
 
 .imgnosotros2 {
-   height:950px;
+   height:900px;
    width: 700px;
    padding: 10px;
   
@@ -158,37 +169,85 @@
         padding-right: 100px;
 
     }
-    .textnosotros h3 {
-        font-size: 50px;
+
+    #carrousel-img-banner{
+        height: 400px;
+        width: 767px;
     }
 
-  .textnosotros ul li {
-        justify-content: center;
-        align-items: center;
-        font-size: 1.3rem;
-      
+    #nosotros{
+     .sobrenosotros {
+         .textnosotros {
+              h3{
+               font-size: 4rem;
+              }
+              p{
+                 font-size: 1.5rem;
+              }
+        }
+    }
+    }
+
+
+        #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
+            height: 600px;
+            width: 600px;
+            border-radius: 30px;
+        }
+        
+        
+        .mapaubicacion .mapaubicacion2 {
+            height: 600px;
+            width: 600px;
+            border-radius: 30px;
+            padding: 20px;
         }
 
-
-    .imgnosotros2 {
-        width: 500px;
-     }
-     
-     .mapaubicacion2 {    
-         width: 500px;
-        }
-
-        .wsapaside {
+       span .wsapaside {
             position:fixed;
               left: 80%;
               bottom: 6%; }
     }
     
 @media (min-width :600px)  and  (max-width :630px) {
-    .wsapaside {
+    #carrousel-img-banner{
+        height: 400px;
+        width: 630px;
+    }
+
+    #nosotros{
+        .sobrenosotros {
+            .textnosotros {
+                 h3{
+                  font-size: 3rem;
+                 }
+                 p{
+                    font-size: 1.2rem;
+                 }
+           }
+       }
+       }
+   
+   
+           #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
+               height: 600px;
+               width: 550px;
+               border-radius: 30px;
+           }
+           
+           
+           .mapaubicacion .mapaubicacion2 {
+               height: 600px;
+               width: 550px;
+               border-radius: 30px;
+               padding: 20px;
+           }
+
+
+    span .wsapaside {
         position:fixed;
-          left: 76%;
-          bottom: 8%; }
+          left: 65%;
+          bottom: 6%; }
 }
 
 @media (max-width :600px) {
@@ -199,42 +258,54 @@
 
     }
 
-   .textnosotros h3 {
-    font-size: 50px;
-}
-
-.imgnosotros2 {
-    width: 400px;
- }
- 
- .mapaubicacion2 {    
-     width: 400px;
+    #carrousel-img-banner{
+        height: 400px;
+        width: 605px;
     }
 
-.textnosotros ul li {
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
+    #nosotros{
+        .sobrenosotros {
+            .textnosotros {
+                 h3{
+                  font-size: 2rem;
+                 }
+                 p{
+                    font-size: 1rem;
+                 }
+           }
+       }
+       }
+   
+
+    #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
+        height: 600px;
+        width: 400px;
+        border-radius: 30px;
+    }
+    
+    
+    .mapaubicacion .mapaubicacion2 {
+        height: 600px;
+        width: 400px;
+        border-radius: 30px;
+    }
+
+    .infocontacto .contactanostitulo {
+        font-size: 4rem;
+    }
+    .infocontacto .contenedor-contacto {
+        font-size: 1rem;
+    }
   
-    }
-
-   .infocontacto h3{
-    font-size: 30px;
- 
-   }
-
-   .infocontacto {
-    font-size:35px;
-    flex-wrap: wrap;
-
-   }
 
    
 
-    .wsapaside {
-        position:fixed;
-          left: 76%;
-          bottom: 8%; }
+   span .wsapaside {
+    position:fixed;
+      left: 80%;
+      bottom: 6%; 
+    }
+
 
      #footerindex {
             grid-template-rows: repeat(3,1fr).5fr ;
@@ -246,14 +317,25 @@
             "derechosautor "; }
 }
 
+@media (min-width :480px)  and  (max-width :595px) {
 
-  
+    #carrousel-img-banner{
+        height: 600px;
+        width: 575px;
+    }
+}
+
 @media (max-width :480px) {
 
     #logoimg {
         height: 200px ;
         width: 300px;
 
+    }
+
+    #carrousel-img-banner{
+        height: 600px;
+        width: 480px;
     }
 
        .imgnosotros2 {
@@ -264,24 +346,13 @@
          width: 350px;
         }
 
-           .infocontacto h3 { 
-            font-size: 3rem; 
-        }
-        
-        .infocontacto p {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        .infocontacto span {
-            font-size: 1.0rem;
-            margin-bottom: 10px;
-        }
 
-        .wsapaside {
+
+        span .wsapaside {
             position:fixed;
-              left: 68%;
-              bottom: 8%; }
+              left: 60%;
+              bottom: 6%; }
+        
 }
   
 @media (min-width : 320px)  and  (max-width :453px) {
@@ -289,6 +360,11 @@
         height: 170px ;
         width: 250px;
 
+    }
+
+    #carrousel-img-banner{
+        height: 600px;
+        width: 455px;
     }
     
     .imgnosotros2 {
@@ -314,48 +390,58 @@
      }
 
 @media (max-width :320px) {
-      #logoimg {
-           height: 100px;
-           width: 200px;
-      }
+    #headerindex div #logo a #logoimg {
+        height: 150px;
+        width: 200px;
+    }
+      #carrousel-img-banner{
+        height: 600px;
+        width: 320px;
+    }
+    
     
     .leer-mas-btn {
         margin-bottom: 20px;
     }
 
-    .imgnosotros2 {
-        width: 200px;
-     }
-     
-     .mapaubicacion2 {
-         width: 200px;
-        }
+    #nosotros{
+        .sobrenosotros {
+            .textnosotros {
+                 h3{
+                  font-size: 2rem;
+                 }
+                 p{
+                    font-size: 1rem;
+                 }
+           }
+       }
+       }
+   
 
+    #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
+        height: 600px;
+        width: 250px;
+        border-radius: 30px;
+    }
+    
+    
+    .mapaubicacion .mapaubicacion2 {
+        height: 600px;
+        width: 300px;
+        border-radius: 30px;
+    }
 
-        .infocontacto h3 { 
-            font-size: 3rem; 
-        }
-        
-        .infocontacto p {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        .infocontacto span {
-            font-size: 1.0rem;
-        }
-         
-        .imglogowsap {
-           height:200px ;
-           width: 50px;
-        }
-        
-     .wsapaside {
-            position:fixed;
-              left: 52%;
-              bottom: 8%; }
+    .infocontacto .contactanostitulo {
+        font-size: 3rem;
+    }
 
-     }
+             
+   span .wsapaside {
+    position:fixed;
+      left: 50%;
+      bottom: 6%; 
+    }
+}
 
 
      @media (min-width :1201px) and (max-width :1400px) {
