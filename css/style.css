@@ -344,16 +344,6 @@ span .wsapaside .imglogowsap {
   height: 30px;
   width: 30px;
 }
-.main-fqa span .wsapaside {
-  position: fixed;
-  left: 93%;
-  bottom: 15%;
-}
-.main-fqa span .wsapaside .imglogowsap {
-  height: 70px;
-  width: 100px;
-  border-radius: 80px;
-}
 
 #main-contacto section {
   padding: 20px;
@@ -456,16 +446,6 @@ span .wsapaside .imglogowsap {
     grid-template-columns: 1fr;
     grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
   }
-  #headerindex a {
-    font-size: 1rem;
-    margin-left: 10px;
-  }
-  #logo {
-    margin-top: 20px;
-  }
-  #navbar-top {
-    flex-direction: row;
-  }
   #carrousel-img-banner {
     height: 300px;
     width: 100%;
@@ -489,6 +469,10 @@ span .wsapaside .imglogowsap {
     height: 900px;
     width: 700px;
     padding-top: 100px;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 250px;
+    width: 350px;
   }
 }
 @media (max-width: 1024px) {
@@ -544,8 +528,20 @@ span .wsapaside .imglogowsap {
     display: flex;
     font-size: 25px;
   }
+  #main-nosotros #card-nosotros {
+    width: 99%;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 220px;
+    width: 320px;
+  }
+  #main-nosotros span .wsapaside {
+    position: fixed;
+    left: 86%;
+    bottom: 6%;
+  }
 }
-@media (min-width: 768px) and (max-width: 968px) {
+@media (min-width: 765px) and (max-width: 968px) {
   #logo {
     padding-left: 100px;
   }
@@ -561,6 +557,18 @@ span .wsapaside .imglogowsap {
     position: fixed;
     left: 86%;
     bottom: 15%;
+  }
+  #main-nosotros #card-nosotros {
+    width: 99%;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 200px;
+    width: 300px;
+  }
+  #main-nosotros span .wsapaside {
+    position: fixed;
+    left: 86%;
+    bottom: 6%;
   }
 }
 @media (max-width: 768px) {
@@ -595,6 +603,19 @@ span .wsapaside .imglogowsap {
     left: 80%;
     bottom: 6%;
   }
+  #main-nosotros #card-nosotros {
+    width: 99%;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 400px;
+    width: 700px;
+    padding-left: 50px;
+  }
+  #main-nosotros span .wsapaside {
+    position: fixed;
+    left: 86%;
+    bottom: 6%;
+  }
 }
 @media (min-width: 600px) and (max-width: 630px) {
   #carrousel-img-banner {
@@ -624,6 +645,33 @@ span .wsapaside .imglogowsap {
     bottom: 6%;
   }
 }
+#main-nosotros #card-nosotros {
+  width: 98%;
+}
+
+#main-nosotros #card-nosotros div div div #imagen-card {
+  height: 400px;
+  width: 550px;
+  padding-left: 50px;
+}
+
+#main-nosotros span .wsapaside {
+  position: fixed;
+  left: 80%;
+  bottom: 6%;
+}
+
+.main-fqa section div li {
+  padding-left: 10%;
+  font-size: 1.2rem;
+}
+
+.main-fqa span .wsapaside {
+  position: fixed;
+  left: 70%;
+  bottom: 15%;
+}
+
 @media (max-width: 600px) {
   #logoimg {
     height: 300px;
@@ -661,6 +709,15 @@ span .wsapaside .imglogowsap {
     left: 80%;
     bottom: 6%;
   }
+  .main-fqa section div li {
+    padding-left: 10%;
+    font-size: 1.2rem;
+  }
+  .main-fqa span .wsapaside {
+    position: fixed;
+    left: 75%;
+    bottom: 15%;
+  }
   #footerindex {
     grid-template-rows: repeat(3, 1fr) 0.5fr;
     grid-template-columns: 1fr;
@@ -693,30 +750,102 @@ span .wsapaside .imglogowsap {
     left: 60%;
     bottom: 6%;
   }
+  #main-nosotros #card-nosotros {
+    width: 97%;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 400px;
+    width: 450px;
+    padding-left: 40px;
+  }
+  #main-nosotros span .wsapaside {
+    position: fixed;
+    left: 80%;
+    bottom: 6%;
+  }
+  .main-fqa #barra-buscar {
+    width: 70%;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 200px;
+    margin-left: 10px;
+  }
+  .main-fqa section div div nav div form input {
+    padding-right: 300px;
+  }
+  .main-fqa section div li {
+    font-size: 1, 2rem;
+    padding-left: 5%;
+    text-align: start;
+  }
+  .main-fqa span .wsapaside {
+    position: fixed;
+    left: 65%;
+    bottom: 6%;
+  }
 }
-@media (min-width: 320px) and (max-width: 453px) {
+@media (min-width: 321px) and (max-width: 453px) {
   #logoimg {
     height: 170px;
     width: 250px;
   }
   #carrousel-img-banner {
     height: 600px;
-    width: 455px;
+    width: 320px;
   }
-  .imgnosotros2 {
-    width: 200px;
+  #nosotros .sobrenosotros .textnosotros h3 {
+    font-size: 2rem;
   }
-  .mapaubicacion2 {
-    width: 200px;
+  #nosotros .sobrenosotros .textnosotros p {
+    font-size: 1rem;
   }
-  .infocontacto {
-    font-size: 20px;
-    flex-wrap: wrap;
+  #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
+    height: 600px;
+    width: 250px;
+    border-radius: 30px;
   }
-  .wsapaside {
+  .mapaubicacion .mapaubicacion2 {
+    height: 600px;
+    width: 300px;
+    border-radius: 30px;
+  }
+  .infocontacto .contactanostitulo {
+    font-size: 3rem;
+  }
+  span .wsapaside {
     position: fixed;
-    left: 68%;
-    bottom: 8%;
+    left: 50%;
+    bottom: 6%;
+  }
+  #main-nosotros #card-nosotros {
+    width: 97, 5%;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 300px;
+    width: 400px;
+    padding-left: 40px;
+  }
+  #main-nosotros span .wsapaside {
+    position: fixed;
+    left: 80%;
+    bottom: 6%;
+  }
+  .main-fqa #barra-buscar {
+    width: 20%;
+    flex-direction: column;
+    padding: 0%;
+    padding-right: 0%;
+  }
+  .main-fqa section div div nav div form input {
+    padding: 20%;
+    padding-right: 150px;
+  }
+  .main-fqa section div div nav div form .boton {
+    padding: 20px 80px 10px 20px;
+  }
+  .main-fqa section div li {
+    padding-left: 5%;
+    text-align: start;
   }
 }
 @media (max-width: 320px) {
@@ -755,6 +884,46 @@ span .wsapaside .imglogowsap {
     left: 50%;
     bottom: 6%;
   }
+  #maincomprar span .wsapaside {
+    position: fixed;
+    left: 60%;
+    bottom: 6%;
+  }
+  #main-nosotros #card-nosotros {
+    width: 96%;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 200px;
+    width: 300px;
+    padding-left: 40px;
+  }
+  #main-nosotros span .wsapaside {
+    position: fixed;
+    left: 80%;
+    bottom: 6%;
+  }
+  .main-fqa #barra-buscar {
+    width: 20%;
+    flex-direction: column;
+    padding: 0%;
+    padding-right: 0%;
+  }
+  .main-fqa section div div nav div form input {
+    padding: 20%;
+    padding-right: 150px;
+  }
+  .main-fqa section div div nav div form .boton {
+    padding: 20px 80px 10px 20px;
+  }
+  .main-fqa section div li {
+    padding-left: 5%;
+    text-align: start;
+  }
+  .main-fqa span .wsapaside {
+    position: fixed;
+    left: 50%;
+    bottom: 6%;
+  }
 }
 @media (min-width: 1201px) and (max-width: 1400px) {
   #logo {
@@ -783,6 +952,18 @@ span .wsapaside .imglogowsap {
     height: 100%;
     width: 100%;
     padding-top: 100px;
+  }
+  #main-nosotros #card-nosotros {
+    width: 99%;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 250px;
+    width: 350px;
+  }
+  #main-nosotros span .wsapaside {
+    position: fixed;
+    left: 86%;
+    bottom: 6%;
   }
 }
 
