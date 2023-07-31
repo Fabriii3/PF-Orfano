@@ -64,6 +64,10 @@
         }
       }
 
-   @include wsp-alcostado;
+      span .wsapaside .imglogowsap {
+        position: fixed;
+        left: 93%;
+        bottom: 15%;
+      }
 
 }

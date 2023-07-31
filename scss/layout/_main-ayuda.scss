@@ -34,7 +34,6 @@
             
                 li{
                     color:black;
-                    padding-left: 30%;
                     font-size: 1.3rem;
                     text-align: start;
                     font-style: italic;
@@ -48,6 +47,11 @@
         }
     }
 
- 
+    
+    span .wsapaside .imglogowsap {
+        position: fixed;
+        left: 93%;
+        bottom: 15%;
+      }
 
 }

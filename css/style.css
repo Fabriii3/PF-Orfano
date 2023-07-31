@@ -312,15 +312,10 @@ span .wsapaside .imglogowsap {
   width: 630px;
   border-radius: 5px;
 }
-#main-nosotros span .wsapaside {
+#main-nosotros span .wsapaside .imglogowsap {
   position: fixed;
   left: 93%;
   bottom: 15%;
-}
-#main-nosotros span .wsapaside .imglogowsap {
-  height: 70px;
-  width: 100px;
-  border-radius: 80px;
 }
 
 .main-fqa section div p {
@@ -343,7 +338,6 @@ span .wsapaside .imglogowsap {
 }
 .main-fqa section div li {
   color: black;
-  padding-left: 30%;
   font-size: 1.3rem;
   text-align: start;
   font-style: italic;
@@ -353,6 +347,11 @@ span .wsapaside .imglogowsap {
   margin-right: 10px;
   height: 30px;
   width: 30px;
+}
+.main-fqa span .wsapaside .imglogowsap {
+  position: fixed;
+  left: 93%;
+  bottom: 15%;
 }
 
 #main-contacto section {
