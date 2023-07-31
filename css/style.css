@@ -35,7 +35,7 @@ html {
   font-style: italic;
   font-weight: bold;
 }
-#headerindex a:hover {
+#headerindex nav a:hover {
   color: #E3F2FD;
   background-color: black;
   border-radius: 10px;
