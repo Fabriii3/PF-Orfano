@@ -450,8 +450,20 @@ span .wsapaside .imglogowsap {
 
 /* Escritorio primero o destok first */
 @media (max-width: 1200px) {
+  #headerindex div #logo {
+    height: 150px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 250px;
+    width: 300px;
+  }
   #mainindex {
-    grid-template-rows: repeat(4, 1fr);
+    grid-area: main;
+    grid-template-rows: 0.2fr repeat(3, 1fr);
     grid-template-columns: 1fr;
     grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
   }
@@ -485,13 +497,20 @@ span .wsapaside .imglogowsap {
   }
 }
 @media (max-width: 1024px) {
-  #logoimg {
-    height: 400px;
-    width: 600px;
+  #headerindex div #logo {
+    height: 150px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 250px;
+    width: 300px;
   }
   #mainindex {
     grid-area: main;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 0.2fr repeat(3, 1fr);
     grid-template-columns: 1fr;
     grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
   }
@@ -551,8 +570,16 @@ span .wsapaside .imglogowsap {
   }
 }
 @media (min-width: 765px) and (max-width: 968px) {
-  #logo {
-    padding-left: 100px;
+  #headerindex div #logo {
+    height: 150px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 250px;
+    width: 300px;
   }
   .imgnosotros2 {
     height: 100%;
@@ -581,10 +608,16 @@ span .wsapaside .imglogowsap {
   }
 }
 @media (max-width: 768px) {
-  #logoimg {
-    height: 300px;
+  #headerindex div #logo {
+    height: 150px;
     width: 600px;
-    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 250px;
+    width: 300px;
   }
   #carrousel-img-banner {
     height: 400px;
@@ -627,6 +660,17 @@ span .wsapaside .imglogowsap {
   }
 }
 @media (min-width: 600px) and (max-width: 630px) {
+  #headerindex div #logo {
+    height: 150px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 250px;
+    width: 300px;
+  }
   #carrousel-img-banner {
     height: 400px;
     width: 630px;
@@ -682,10 +726,16 @@ span .wsapaside .imglogowsap {
 }
 
 @media (max-width: 600px) {
-  #logoimg {
-    height: 300px;
-    width: 400px;
-    padding-right: 105px;
+  #headerindex div #logo {
+    height: 150px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 250px;
+    width: 300px;
   }
   #carrousel-img-banner {
     height: 400px;
@@ -740,8 +790,15 @@ span .wsapaside .imglogowsap {
   }
 }
 @media (max-width: 480px) {
-  #logoimg {
-    height: 200px;
+  #headerindex div #logo {
+    height: 150px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 250px;
     width: 300px;
   }
   #carrousel-img-banner {
@@ -794,13 +851,23 @@ span .wsapaside .imglogowsap {
   }
 }
 @media (min-width: 321px) and (max-width: 453px) {
-  #logoimg {
-    height: 170px;
+  #headerindex {
+    width: 445px;
+  }
+  #headerindex div #logo {
+    height: 150px;
+    width: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #headerindex div #logo a #logoimg {
+    height: 200px;
     width: 250px;
   }
   #carrousel-img-banner {
     height: 600px;
-    width: 320px;
+    width: 450px;
   }
   #nosotros .sobrenosotros .textnosotros h3 {
     font-size: 2rem;
@@ -856,19 +923,37 @@ span .wsapaside .imglogowsap {
     padding-left: 5%;
     text-align: start;
   }
+  #footerindex {
+    width: 445px;
+  }
 }
 @media (max-width: 320px) {
+  #headerindex {
+    width: 445px;
+  }
+  #footerindex {
+    width: 445px;
+  }
   #headerindex div #logo {
     height: 150px;
     width: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #headerindex div #logo a #logoimg {
     height: 200px;
-    width: 100%;
+    width: 250px;
+  }
+  #mainindex {
+    grid-area: main;
+    grid-template-rows: 8% 0.5fr 0.5fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
   }
   #carrousel-img-banner {
     height: 600px;
-    width: 325px;
+    width: 445px;
   }
   .leer-mas-btn {
     margin-bottom: 20px;
@@ -938,18 +1023,10 @@ span .wsapaside .imglogowsap {
     bottom: 6%;
   }
 }
-@media (min-width: 1201px) and (max-width: 1400px) {
-  #logo {
-    margin-top: 50px;
-    padding: 10px;
-    padding-left: 150px;
-  }
-  #logoimg {
-    height: 100px;
-    width: 270px;
-  }
+@media (min-width: 1200px) and (max-width: 1400px) {
   #mainindex {
-    grid-template-rows: repeat(4, 1fr);
+    grid-area: main;
+    grid-template-rows: 0.2fr repeat(3, 1fr);
     grid-template-columns: 1fr;
     grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
   }
