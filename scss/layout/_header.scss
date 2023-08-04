@@ -20,18 +20,12 @@
         }
 
         nav {
-          li{
-            &:hover {
+          a{
+            color:black;
+            border-radius: 10px;
+            &:hover{
               background-color: black;
-              border-radius: 10px;
-            }
-            a{
-              color:black;
-              &:hover{
-                color: #E3F2FD;
-                display: no;
-                
-              }
+              color: #E3F2FD;
             }
           }
         }

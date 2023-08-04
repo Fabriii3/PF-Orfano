@@ -35,16 +35,13 @@ html {
   font-style: italic;
   font-weight: bold;
 }
-#headerindex nav li:hover {
-  background-color: black;
+#headerindex nav a {
+  color: black;
   border-radius: 10px;
 }
-#headerindex nav li a {
-  color: black;
-}
-#headerindex nav li a:hover {
+#headerindex nav a:hover {
+  background-color: black;
   color: #E3F2FD;
-  display: no;
 }
 
 #headerindex {
