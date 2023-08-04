@@ -55,12 +55,17 @@
   
    }
 
-   #main-nosotros #card-nosotros div div div #imagen-card {
-    height: 250px;
-    width: 350px;
-   
-  }
 
+
+   #main-nosotros #card-nosotros{
+    width: 99%;
+}
+
+#main-nosotros #card-nosotros div div div #imagen-card {
+    height: 350px;
+    width: 360px;
+    padding-left: 30px;
+}
 
 }
 
@@ -152,8 +157,8 @@
     }
 
     #main-nosotros #card-nosotros div div div #imagen-card {
-        height: 220px;
-        width: 320px;
+        height: 250px;
+        width: 300px;
        
       }
  
@@ -203,7 +208,7 @@
     
         #main-nosotros #card-nosotros div div div #imagen-card {
             height: 200px;
-            width: 300px;
+            width: 200px;
            
           }
      
@@ -345,13 +350,6 @@
 #main-nosotros #card-nosotros{
     width: 98%;
 }
-
-#main-nosotros #card-nosotros div div div #imagen-card {
-    height: 400px;
-    width: 550px;
-  padding-left: 50px;
-  }
-
   #main-nosotros span .wsapaside  {
     position:fixed;
     left: 80%;
@@ -433,6 +431,12 @@
       bottom: 6%; 
     }
 
+    #main-nosotros #card-nosotros div div div #imagen-card {
+        height: 400px;
+        width: 500px;
+      padding-left: 60px;
+      }
+
     .main-fqa section div li {
         padding-left: 10%;
         font-size: 1.2rem;
@@ -454,6 +458,13 @@
             "ayuda" 
             "siguenos "
             "derechosautor "; }
+
+            #footerindex{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+              }
 }
 
 @media (min-width :480px)  and  (max-width :595px) {
@@ -558,6 +569,17 @@
         height: 200px;
         width:250px;
       
+    }
+
+    #mainindex {
+        grid-area: main;
+        grid-template-rows: 6% 0.3fr 0.7fr 0.3fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "banner"
+            "sobrenosotros"
+            "mapa"
+            "contacto";
     }
    
  #carrousel-img-banner{
@@ -670,7 +692,7 @@
 
     #mainindex {
         grid-area: main;
-        grid-template-rows: 8% 0.5fr 0.5fr 1fr;
+        grid-template-rows: 6% 0.3fr 0.7fr 0.3fr;
         grid-template-columns: 1fr;
         grid-template-areas:
             "banner"
@@ -739,11 +761,14 @@
     #main-nosotros #card-nosotros{
         width: 96%;
     }
-    
+    #main-nosotros{
+        width: 450px;
+        
+    }
+
     #main-nosotros #card-nosotros div div div #imagen-card {
         height: 200px;
-        width: 300px;
-      padding-left: 40px;
+        width: 400px;
       }
     
       #main-nosotros span .wsapaside  {
@@ -777,9 +802,17 @@
         left: 50%;
         bottom: 6%;
       }
+     
+
+      #footerindex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+      }
 }
 
-     @media (min-width :1200px) and (max-width :1400px) {
+    @media (min-width :1200px) and (max-width :1400px) {
        
         #mainindex {
             grid-area: main;
