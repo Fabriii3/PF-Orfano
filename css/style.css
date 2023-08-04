@@ -28,17 +28,23 @@ html {
 }
 #headerindex div #logo a #logoimg {
   height: 100px;
-  width: 270px;
+  width: 200px;
 }
 #headerindex a {
   font-size: 1.2rem;
   font-style: italic;
   font-weight: bold;
 }
-#headerindex nav a:hover {
-  color: #E3F2FD;
+#headerindex nav li:hover {
   background-color: black;
   border-radius: 10px;
+}
+#headerindex nav li a {
+  color: black;
+}
+#headerindex nav li a:hover {
+  color: #E3F2FD;
+  display: no;
 }
 
 #headerindex {
