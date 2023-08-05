@@ -16,15 +16,23 @@
 }
 
 
-@mixin wsp-alcostado {
-    span .wsapaside {
-        position: fixed;
-        left: 93%;
-        bottom: 15%;
-      }
-      span .wsapaside .imglogowsap {
-        height: 70px;
-        width: 100px;
-        border-radius: 80px;
-      }
+@mixin flexbox($direction, $wrap, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
 }
+
+// @mixin wsp-alcostado {
+//     span .wsapaside {
+//         position: fixed;
+//         left: 93%;
+//         bottom: 15%;
+//       }
+//       span .wsapaside .imglogowsap {
+//         height: 70px;
+//         width: 100px;
+//         border-radius: 80px;
+//       }
+// }
