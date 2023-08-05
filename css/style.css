@@ -324,6 +324,24 @@ html {
   height: 30px;
   width: 30px;
 }
+.main-fqa div button img {
+  margin-right: 10px;
+  height: 70px;
+  width: 30px;
+}
+.main-fqa div button .parrafo-pregunta {
+  color: black;
+  font-size: 1.3rem;
+  text-align: start;
+  font-style: italic;
+  font-weight: bold;
+}
+.main-fqa div .parrafo-respuesta {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+}
 
 #main-contacto section {
   padding: 20px;

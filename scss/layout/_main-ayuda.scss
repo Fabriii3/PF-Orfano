@@ -1,52 +1,73 @@
 .main-fqa {
-//     background-image:url("../assets/images/");
-//    background-repeat: no-repeat;
-//    background-size: cover;
-    section{
-         div{
-             p{
-                color: black;
-                font-size: 3rem;
-                text-align: center;
-                font-weight: 800;
-            }
-
-          div{
-            nav{
-               div{
-                form{
-                    input{
-                       padding: 20px;
-                       padding-right: 400px;
-                       border: 2px solid black;
+    //     background-image:url("../assets/images/");
+    //    background-repeat: no-repeat;
+    //    background-size: cover;
+        section{
+             div{
+                 p{
+                    color: black;
+                    font-size: 3rem;
+                    text-align: center;
+                    font-weight: 800;
+                }
+    
+              div{
+                nav{
+                   div{
+                    form{
+                        input{
+                           padding: 20px;
+                           padding-right: 400px;
+                           border: 2px solid black;
+                        }
+                        .boton{
+                            background-color:white;
+                            padding: 20px;
+                            border-radius: 10px;
+                            border: 2px solid black;
+                            color: black;
+                        }
                     }
-                    .boton{
-                        background-color:white;
-                        padding: 20px;
-                        border-radius: 10px;
-                        border: 2px solid black;
-                        color: black;
-                    }
+                  }
                 }
               }
-            }
-          }
-            
-                li{
-                    color:black;
-                    font-size: 1.3rem;
-                    text-align: start;
-                    font-style: italic;
-                    font-weight: bold;
-                    img{
-                        margin-right: 10px;
-                        height:30px ;
-                        width:30px ;
-                    }
+                
+                    li{
+                        color:black;
+                        font-size: 1.3rem;
+                        text-align: start;
+                        font-style: italic;
+                        font-weight: bold;
+                        img{
+                            margin-right: 10px;
+                            height:30px ;
+                            width:30px ;
+                        }
+                }
             }
         }
-    }
-
-    
-    
+       
+        div{
+             button{
+                 img{
+                  margin-right: 10px;
+                  height:70px ;
+                   width:30px ;
+                        }
+                        .parrafo-pregunta{
+                 color:black;
+                    font-size: 1.3rem;
+                   text-align: start;
+                    font-style: italic;
+                  font-weight: bold;
+             }
+           }
+           .parrafo-respuesta{
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 500;
+            font-style: italic;
+           }
+        }
+     
 }
