@@ -76,12 +76,15 @@ li {
   flex-direction: row;
 }
 #nosotros .sobrenosotros h3 {
+  color: black;
   margin-top: 10px;
   font-weight: 600;
   text-align: center;
   font-size: 4rem;
   font-family: Roboto, sans-serif;
   padding-top: 200px;
+  font-style: italic;
+  font-weight: bold;
 }
 #nosotros .sobrenosotros .textnosotros {
   background-repeat: no-repeat;
@@ -150,6 +153,9 @@ li {
   font-size: 5rem;
   text-align: center;
   margin-bottom: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
 }
 .infocontacto .contenedor-contacto .direccion {
   background-color: #E3F2FD;
