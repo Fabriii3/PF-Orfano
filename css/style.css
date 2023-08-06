@@ -53,7 +53,7 @@ li {
   height: 100%;
   display: grid;
   grid-area: main;
-  grid-template-rows: 0.5fr repeat(2, 1fr);
+  grid-template-rows: 0.1fr repeat(2, 0.5fr);
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "banner banner" "sobrenosotros sobrenosotros" "mapa contacto ";
 }
@@ -772,6 +772,12 @@ li {
     height: 250px;
     width: 300px;
   }
+  #mainindex {
+    grid-area: main;
+    grid-template-rows: 6% 0.3fr 0.7fr 0.3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
+  }
   #carrousel-img-banner {
     height: 600px;
     width: 480px;
@@ -782,10 +788,9 @@ li {
   .mapaubicacion2 {
     width: 350px;
   }
-  span .wsapaside {
-    position: fixed;
-    left: 60%;
-    bottom: 6%;
+  .infocontacto .contenedor-contacto {
+    font-size: 2rem;
+    width: 400px;
   }
   #main-nosotros #card-nosotros {
     width: 97%;
@@ -794,11 +799,6 @@ li {
     height: 400px;
     width: 450px;
     padding-left: 40px;
-  }
-  #main-nosotros span .wsapaside {
-    position: fixed;
-    left: 80%;
-    bottom: 6%;
   }
   .main-fqa #barra-buscar {
     width: 70%;
@@ -865,6 +865,10 @@ li {
   .infocontacto .contactanostitulo {
     font-size: 3rem;
   }
+  .infocontacto .contenedor-contacto {
+    font-size: 2rem;
+    width: 300px;
+  }
   #main-nosotros {
     width: 445px;
   }
@@ -922,7 +926,7 @@ li {
   }
   #mainindex {
     grid-area: main;
-    grid-template-rows: 6% 0.3fr 0.7fr 0.3fr;
+    grid-template-rows: 6% 0.3fr 0.7fr 0.1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "banner" "sobrenosotros" "mapa" "contacto";
   }
@@ -952,15 +956,9 @@ li {
   .infocontacto .contactanostitulo {
     font-size: 3rem;
   }
-  span .wsapaside {
-    position: fixed;
-    left: 60%;
-    bottom: 6%;
-  }
-  #maincomprar span .wsapaside {
-    position: fixed;
-    left: 60%;
-    bottom: 6%;
+  .infocontacto .contenedor-contacto {
+    font-size: 2rem;
+    width: 300px;
   }
   #main-nosotros #card-nosotros {
     width: 96%;
@@ -971,11 +969,6 @@ li {
   #main-nosotros #card-nosotros div div div #imagen-card {
     height: 200px;
     width: 400px;
-  }
-  #main-nosotros span .wsapaside {
-    position: fixed;
-    left: 80%;
-    bottom: 6%;
   }
   .main-fqa #barra-buscar {
     width: 20%;
@@ -993,11 +986,6 @@ li {
   .main-fqa section div li {
     padding-left: 5%;
     text-align: start;
-  }
-  .main-fqa span .wsapaside {
-    position: fixed;
-    left: 50%;
-    bottom: 6%;
   }
   #footerindex {
     display: flex;
