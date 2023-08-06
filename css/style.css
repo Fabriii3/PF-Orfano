@@ -290,8 +290,10 @@ li {
 }
 #main-nosotros #card-nosotros div div div #imagen-card {
   height: 450px;
-  width: 600px;
-  border-radius: 5px;
+  width: 585px;
+  border-radius: 15px;
+  padding-top: 10px;
+  margin: 10px;
 }
 
 .main-fqa section div p {
@@ -598,11 +600,6 @@ li {
     height: 200px;
     width: 200px;
   }
-  #main-nosotros span .wsapaside {
-    position: fixed;
-    left: 86%;
-    bottom: 6%;
-  }
 }
 @media (max-width: 768px) {
   #headerindex div #logo {
@@ -637,11 +634,6 @@ li {
     border-radius: 30px;
     padding: 20px;
   }
-  span .wsapaside {
-    position: fixed;
-    left: 80%;
-    bottom: 6%;
-  }
   #main-nosotros #card-nosotros {
     width: 99%;
   }
@@ -649,11 +641,6 @@ li {
     height: 400px;
     width: 700px;
     padding-left: 50px;
-  }
-  #main-nosotros span .wsapaside {
-    position: fixed;
-    left: 86%;
-    bottom: 6%;
   }
 }
 @media (min-width: 600px) and (max-width: 630px) {
@@ -689,31 +676,18 @@ li {
     border-radius: 30px;
     padding: 20px;
   }
-  span .wsapaside {
-    position: fixed;
-    left: 65%;
-    bottom: 6%;
+  #main-nosotros #card-nosotros {
+    width: 98%;
+  }
+  #main-nosotros #card-nosotros div div div #imagen-card {
+    height: 400px;
+    width: 500px;
+    padding-left: 60px;
   }
 }
-#main-nosotros #card-nosotros {
-  width: 98%;
-}
-
-#main-nosotros span .wsapaside {
-  position: fixed;
-  left: 80%;
-  bottom: 6%;
-}
-
 .main-fqa section div li {
   padding-left: 10%;
   font-size: 1.2rem;
-}
-
-.main-fqa span .wsapaside {
-  position: fixed;
-  left: 70%;
-  bottom: 15%;
 }
 
 @media (max-width: 600px) {
@@ -753,11 +727,6 @@ li {
   }
   .infocontacto .contenedor-contacto {
     font-size: 1rem;
-  }
-  span .wsapaside {
-    position: fixed;
-    left: 80%;
-    bottom: 6%;
   }
   #main-nosotros #card-nosotros div div div #imagen-card {
     height: 400px;
@@ -896,17 +865,15 @@ li {
   .infocontacto .contactanostitulo {
     font-size: 3rem;
   }
-  span .wsapaside {
-    position: fixed;
-    left: 50%;
-    bottom: 6%;
+  #main-nosotros {
+    width: 445px;
   }
   #main-nosotros #card-nosotros {
     width: 97, 5%;
   }
   #main-nosotros #card-nosotros div div div #imagen-card {
     height: 300px;
-    width: 400px;
+    width: 300px;
     padding-left: 40px;
   }
   #main-nosotros span .wsapaside {
@@ -1065,11 +1032,6 @@ li {
   #main-nosotros #card-nosotros div div div #imagen-card {
     height: 250px;
     width: 350px;
-  }
-  #main-nosotros span .wsapaside {
-    position: fixed;
-    left: 86%;
-    bottom: 6%;
   }
 }
 
