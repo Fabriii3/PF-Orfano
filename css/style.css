@@ -903,6 +903,15 @@ li {
     padding-left: 5%;
     text-align: start;
   }
+  #maincomprar {
+    width: 445px;
+  }
+  .main-fqa {
+    width: 445px;
+  }
+  #main-contacto {
+    width: 445px;
+  }
   #footerindex {
     width: 445px;
   }
@@ -919,6 +928,15 @@ li {
     width: 445px;
   }
   #footerindex {
+    width: 445px;
+  }
+  #maincomprar {
+    width: 445px;
+  }
+  .main-fqa {
+    width: 445px;
+  }
+  #main-contacto {
     width: 445px;
   }
   #headerindex div #logo {
