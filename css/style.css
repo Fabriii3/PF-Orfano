@@ -42,6 +42,7 @@ li {
 #headerindex nav a:hover {
   background-color: black;
   color: #E3F2FD;
+  box-shadow: 0 5px 10px #000;
 }
 
 #headerindex {
