@@ -235,18 +235,85 @@ li {
   margin: 30px;
   font-size: 30px;
 }
-#maincomprar .catalogoproductos .producto {
-  margin: 50px;
+#maincomprar .card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
 }
-#maincomprar .catalogoproductos .producto img {
-  width: 220px;
-  height: 280px;
-  border-radius: 30px;
+#maincomprar .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
 }
-#maincomprar .catalogoproductos .producto p {
-  text-align: center;
-  font-size: 20px;
+#maincomprar .card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+#maincomprar .card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#maincomprar .card .front p {
+  font-style: italic;
   font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: black;
+  background-color: #E3F2FD;
+  text-align: center;
+  border-radius: 10px;
+}
+#maincomprar .card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #E3F2FD;
+  padding: 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+#maincomprar .card .back p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+#maincomprar .card .back span {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#maincomprar .card .back .link-comprar a {
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#maincomprar .card .back .link-comprar a:hover {
+  color: #E3F2FD;
+  border-radius: 10px;
+  background-color: black;
+  padding: 2px;
+}
+#maincomprar .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+#maincomprar .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }
 
 #main-nosotros {
