@@ -88,7 +88,6 @@ li {
   font-weight: bold;
 }
 #nosotros .sobrenosotros .textnosotros {
-  background-repeat: no-repeat;
   flex-basis: 50%;
   justify-content: center;
   align-items: center;
