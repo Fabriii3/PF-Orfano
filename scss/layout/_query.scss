@@ -17,16 +17,17 @@
 
     #mainindex {
         grid-area: main;
-        grid-template-rows: 0.2fr repeat(3, 1fr);
+        grid-template-rows: 3% 3% 0.3fr 1fr 0.3fr;
         grid-template-columns: 1fr;
         grid-template-areas:
             "banner"
             "sobrenosotros"
+            "galeriaimg"
             "mapa"
             "contacto";
     }
 #carrousel-img-banner{
-    height: 300px;
+    height: 100%;
     width: 100%;
 }
 
@@ -41,20 +42,28 @@
 }
 }
 
-.imgnosotros2 {
-   height:900px;
-   width: 700px;
-   padding: 10px;
-  
+#carrousel-galeria-img{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .galeriaindex{
+        height: 300px;
+         width: 250px; 
+        
+ }
 }
+
 
 .mapaubicacion2 {
     height: 900px;
     width: 700px;
-    padding-top: 100px;
-  
    }
 
+   .infocontacto .contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 
    #main-nosotros #card-nosotros{
@@ -86,17 +95,18 @@
 
     #mainindex {
         grid-area: main;
-        grid-template-rows: 0.2fr repeat(3, 1fr);
+        grid-template-rows: 0.2fr 0.2fr 0.5fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
             "banner"
             "sobrenosotros"
+            "galeriaimg"
             "mapa"
             "contacto";
     }
 
     #carrousel-img-banner img {
-        height: 800px;
+        height: 100%;
         width: 100%;
     }
 
@@ -116,9 +126,16 @@
       
         }
 
-    .imgnosotros2 {
-        width: 900px;
-    }
+        #carrousel-galeria-img{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .galeriaindex{
+                height: 300px;
+                 width: 220px; 
+                
+         }
+        }
 
     .mapaubicacion{
         display: flex;
@@ -170,6 +187,19 @@
 
 
 }
+@media (max-width :992px) {
+#carrousel-galeria-img{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .galeriaindex{
+                height: 300px;
+                 width: 200px; 
+                
+         }
+        }
+}
+
 @media (min-width :765px)  and  (max-width :968px) {
     #headerindex div #logo {
         height: 150px;
@@ -230,7 +260,7 @@
     }
 
     #carrousel-img-banner{
-        height: 400px;
+        height:100%;
         width: 767px;
     }
 
@@ -248,18 +278,21 @@
     }
 
 
-        #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
-            height: 600px;
-            width: 600px;
-            border-radius: 30px;
-        }
+    #carrousel-galeria-img{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .galeriaindex{
+            height: 300px;
+             width: 150px; 
+            
+     }
+    }
         
         
         .mapaubicacion .mapaubicacion2 {
-            height: 600px;
-            width: 600px;
-            border-radius: 30px;
-            padding: 20px;
+            height: 100%;
+            width: 100%;
         }
 
 
@@ -293,9 +326,9 @@
       
     }
 
-    #carrousel-img-banner{
-        height: 400px;
-        width: 630px;
+    #carrousel-img-banner {
+        height: 100%;
+        width: 100%;
     }
 
     #nosotros{
@@ -311,19 +344,18 @@
        }
        }
    
-   
-           #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
-               height: 600px;
-               width: 550px;
-               border-radius: 30px;
-           }
-           
-           
+       #carrousel-galeria-img{
+        .galeriaindex{
+            height: 200px;
+             width: 110px; 
+            
+     }
+    }
            .mapaubicacion .mapaubicacion2 {
                height: 600px;
                width: 550px;
                border-radius: 30px;
-               padding: 20px;
+               padding: 10px;
            }
 
            #main-nosotros #card-nosotros{
@@ -362,7 +394,7 @@
     }
 
     #carrousel-img-banner{
-        height: 400px;
+        height:100%;
         width: 605px;
     }
 
@@ -380,17 +412,37 @@
        }
    
 
-    #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
-        height: 600px;
-        width: 400px;
-        border-radius: 30px;
-    }
+        #mainindex {
+            grid-area: main;
+            grid-template-rows: 6% 0.3fr 0.3fr  0.3fr 0.1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "banner"
+                "sobrenosotros"
+                "galeriaimg "
+                "mapa"
+                "contacto";
+        }
+    
+        #carrousel-galeria-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .galeriaindex{
+                height: 350px;
+                 width: 450px; 
+                 margin-left: 70px;
+                }
+            }
+        
     
     
     .mapaubicacion .mapaubicacion2 {
         height: 600px;
-        width: 400px;
-        border-radius: 30px;
+               width: 550px;
+               border-radius: 30px;
+               padding: 10px;
     }
 
     .infocontacto .contactanostitulo {
@@ -411,13 +463,6 @@
         font-size: 1.2rem;
     }
       
-      .main-fqa span .wsapaside {
-        position: fixed;
-        left: 75%;
-        bottom: 15%;
-      }
-    
-
 
      #footerindex {
             grid-template-rows: repeat(3,1fr).5fr ;
@@ -439,9 +484,11 @@
 @media (min-width :480px)  and  (max-width :595px) {
 
     #carrousel-img-banner{
-        height: 600px;
-        width: 575px;
+        height: 200px;
+        width: 100%;
     }
+
+    
 }
 
 @media (max-width :480px) {
@@ -462,31 +509,51 @@
 
     #mainindex {
         grid-area: main;
-        grid-template-rows: 6% 0.3fr 0.7fr 0.3fr;
+        grid-template-rows: 6% 0.3fr 0.7fr  0.5fr 0.1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
             "banner"
             "sobrenosotros"
+            "galeriaimg "
             "mapa"
             "contacto";
+
+            #carrousel-galeria-img {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .galeriaindex {
+                    height: 300px;
+                     width: 400px; 
+                     margin-left: 50px;
+                    }
+                }
+
+                .mapaubicacion{
+                    .titulo-ubicacion{     
+                      font-size: 3rem;
+                  }
+                  .mapaubicacion2 {
+                   width: 480px;
+                   border-radius: 30px;
+               }
+               
+               }
     }
 
     #carrousel-img-banner{
-        height: 600px;
+        height: 200px;
         width: 480px;
     }
 
-       .imgnosotros2 {
-        width: 350px;
-     }
-     
-     .mapaubicacion2 {
-         width: 350px;
-        }
+    #nosotros .sobrenosotros .textnosotros h3 {
+        font-size: 3rem;
+    }
 
         .infocontacto .contenedor-contacto {
             font-size: 2rem;
-            width: 400px;
+            width: 480px;
         }
         
 
@@ -519,12 +586,6 @@
                padding-left: 5%;
                text-align: start;
              }
-             .main-fqa span .wsapaside {
-                position: fixed;
-                left: 65%;
-                bottom: 6%;
-              }
-        
 }
   
 @media (min-width : 321px)  and  (max-width :453px) {
@@ -547,26 +608,47 @@
     }
 
     #mainindex {
+        width: 453px;
         grid-area: main;
-        grid-template-rows: 6% 0.3fr 0.7fr 0.3fr;
+        grid-template-rows: 6% 0.3fr 0.7fr  0.5fr 0.1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
             "banner"
             "sobrenosotros"
+            "galeriaimg "
             "mapa"
             "contacto";
+
+            #carrousel-galeria-img {
+                width: 453px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .galeriaindex {
+                    height: 300px;
+                     width: 370px; 
+                     margin-left: 50px;
+                    }
+                }
+                 .mapaubicacion{
+                    width: 453px;
+                .mapaubicacion2 {
+                    width: 450px;
+                   }
+                }
     }
    
  #carrousel-img-banner{
-    height: 600px;
-    width: 450px;
+    height: 300px;
+    width: 453px;
 }
     
     #nosotros{
         .sobrenosotros {
             .textnosotros {
                  h3{
-                  font-size: 2rem;
+                  font-size: 3rem;
                  }
                  p{
                     font-size: 1rem;
@@ -575,19 +657,19 @@
        }
        }
    
+     .mapaubicacion{
+         .titulo-ubicacion{     
+           font-size: 3rem;
+       }
 
-    #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
-        height: 600px;
-        width: 250px;
-        border-radius: 30px;
-    }
-    
-    
-    .mapaubicacion .mapaubicacion2 {
+       .mapaubicacion2 {
         height: 600px;
         width: 300px;
         border-radius: 30px;
     }
+
+    }
+    
 
     .infocontacto .contactanostitulo {
         font-size: 3rem;
@@ -595,13 +677,10 @@
 
     .infocontacto .contenedor-contacto {
         font-size: 2rem;
-        width: 320px;
+        width: 450px;
     }
     
 
-    #main-nosotros {
-        width: 445px;
-    }
 
     #main-nosotros #card-nosotros{
         width: 97,5%;
@@ -613,6 +692,7 @@
       padding-left: 40px;
       }
     
+   
       .main-fqa #barra-buscar {
         width:20%;
          flex-direction: column;
@@ -632,7 +712,7 @@
         padding-left: 5%;
         text-align: start;
       }
-
+      
       #maincomprar{
         width: 445px;
      }
@@ -647,7 +727,7 @@
 
       #footerindex {
         width: 445px;
-        #siguenosft .redesft2 {
+         #siguenosft .redesft2 {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -655,6 +735,7 @@
            margin: 0px 0px 30px;
           }
      }
+
 }
 
 
@@ -667,6 +748,7 @@
      #footerindex{
         width: 445px;
      }
+
      #maincomprar{
         width: 445px;
      }
@@ -678,7 +760,7 @@
      #main-contacto{
         width: 445px;
      }
-     
+
     #headerindex div #logo {
         height: 150px;
         width:325px;
@@ -694,18 +776,40 @@
     }
 
     #mainindex {
+        width: 445px;
         grid-area: main;
-        grid-template-rows: 6% 0.3fr 0.7fr 0.1fr;
+        grid-template-rows: 6% 0.3fr 0.7fr  0.7fr 0.2fr;
         grid-template-columns: 1fr;
         grid-template-areas:
             "banner"
             "sobrenosotros"
+            "galeriaimg "
             "mapa"
             "contacto";
+
+            #carrousel-galeria-img {
+                width:445px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .galeriaindex {
+                    height: 300px;
+                     width: 330px; 
+                     margin-left: 60px;
+                    }
+                }
+            .mapaubicacion {
+                width: 445px;
+                .mapaubicacion2 {
+                    width: 430px;
+                   }
+                }
+                   padding-bottom: 50px;
     }
 
       #carrousel-img-banner{
-        height: 600px;
+        height: 200px;
         width: 445px;
     }
     
@@ -715,41 +819,32 @@
     }
 
     #nosotros{
+        width: 445px;
         .sobrenosotros {
             .textnosotros {
                  h3{
-                  font-size: 2rem;
+                  font-size: 3rem;
                  }
                  p{
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                  }
            }
        }
-       }
+     }
    
 
-    #nosotros .sobrenosotros .imgnosotros .imgnosotros2 {
-        height: 600px;
-        width: 250px;
-        border-radius: 30px;
-    }
-    
-    
-    .mapaubicacion .mapaubicacion2 {
-        height: 600px;
-        width: 300px;
-        border-radius: 30px;
-    }
+    .infocontacto{
+        width: 445px;
+        .contactanostitulo {
+            font-size: 3rem;
+        }
+        .contenedor-contacto {
+            font-size: 2rem;
+            width: 445px;
+        } 
 
-    .infocontacto .contactanostitulo {
-        font-size: 3rem;
-    }
+    } 
 
-    .infocontacto .contenedor-contacto {
-        font-size: 2rem;
-        width: 320px;
-    }
-    
 
      
     #main-nosotros #card-nosotros{
@@ -797,40 +892,62 @@
             align-content: center;
            margin: 0px 0px 30px;
           }
-      }
-}
+     }
 
-    @media (min-width :1200px) and (max-width :1400px) {
+
+
+    }
+
+
+ 
+
+
+
+
+
+@media (min-width :1200px) and (max-width :1400px) {
        
         #mainindex {
             grid-area: main;
-            grid-template-rows: 0.2fr repeat(3, 1fr);
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                "banner"
-                "sobrenosotros"
-                "mapa"
-                "contacto";
+            grid-template-rows: 0.1fr repeat(3,0.5fr) 0.3fr ;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-areas: 
+            "banner banner"
+            "sobrenosotros sobrenosotros"
+            "galeriaimg galeriaimg"
+            "mapa mapa"
+            "contacto contacto"
         }
 
           
       .sobrenosotros {
         flex-direction: column;
       }
-
-      .imgnosotros2 {
-        height:100%;
-        width: 100%;
-        padding: 10px;
-       
+         
+      #carrousel-galeria-img{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .galeriaindex{
+            height: 300px;
+             width: 300px; 
+            
      }
+    }
+
      
      .mapaubicacion2 {
         height:100%;
         width: 100%;
-         padding-top: 100px;
-       
         }
+
+
+        .infocontacto .contenedor-contacto {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
         #main-nosotros #card-nosotros{
             width: 99%;
         }
@@ -842,5 +959,47 @@
           }
     
      }
+    
+ @media (max-width :1200px) {
+    
+ #carrousel-galeria-img{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .galeriaindex{
+        height: 300px;
+         width: 250px; 
+        }
+    }
+ }
+
+ @media (max-width :576px) {
+    #mainindex {
+        grid-area: main;
+        grid-template-rows: 6% 0.3fr 0.3fr  0.3fr 0.1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "banner"
+            "sobrenosotros"
+            "galeriaimg "
+            "mapa"
+            "contacto";
+    }
+
+    #carrousel-galeria-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .galeriaindex{
+            height: 350px;
+             width: 450px; 
+             margin-left: 70px;
+            }
+        }
+    }
+
+
+
     
     
