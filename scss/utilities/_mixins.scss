@@ -3,16 +3,27 @@
             margin-top: 50px;
             border-radius: 10px ;
             border: 2px solid black;
-            padding: 15px;
+            padding: 20px 50px 20px 20px;
+            margin: 20px;
             p {
-                font-size: 1.8rem;
-                margin-bottom: 10px;
-                font-weight: 600;
-            }
-            span{
                 font-size: 1.5rem;
                 margin-bottom: 10px;
+                font-weight: 600;
+                font-weight: bold;
+                font-style: italic;
             }
+            span{
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+                img{
+                    height:30px;
+                    margin: 5px;
+                }
+            
 }
 
 
@@ -22,6 +33,13 @@
     flex-wrap: $wrap;
     justify-content: $justify;
     align-items: $align;
+}
+
+@mixin footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 // @mixin wsp-alcostado {

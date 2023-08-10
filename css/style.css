@@ -184,16 +184,25 @@ li {
   margin-top: 50px;
   border-radius: 10px;
   border: 2px solid black;
-  padding: 15px;
+  padding: 20px 50px 20px 20px;
+  margin: 20px;
 }
 .infocontacto .contenedor-contacto .direccion p {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-.infocontacto .contenedor-contacto .direccion span {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-weight: 600;
+  font-weight: bold;
+  font-style: italic;
+}
+.infocontacto .contenedor-contacto .direccion span {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+.infocontacto .contenedor-contacto .direccion img {
+  height: 30px;
+  margin: 5px;
 }
 .infocontacto .contenedor-contacto .direccion img {
   height: 30px;
@@ -203,48 +212,75 @@ li {
   margin-top: 50px;
   border-radius: 10px;
   border: 2px solid black;
-  padding: 15px;
+  padding: 20px 50px 20px 20px;
+  margin: 20px;
 }
 .infocontacto .contenedor-contacto .celular p {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-.infocontacto .contenedor-contacto .celular span {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-weight: 600;
+  font-weight: bold;
+  font-style: italic;
+}
+.infocontacto .contenedor-contacto .celular span {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+.infocontacto .contenedor-contacto .celular img {
+  height: 30px;
+  margin: 5px;
 }
 .infocontacto .contenedor-contacto .telefono {
   background-color: #E3F2FD;
   margin-top: 50px;
   border-radius: 10px;
   border: 2px solid black;
-  padding: 15px;
+  padding: 20px 50px 20px 20px;
+  margin: 20px;
 }
 .infocontacto .contenedor-contacto .telefono p {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-.infocontacto .contenedor-contacto .telefono span {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-weight: 600;
+  font-weight: bold;
+  font-style: italic;
+}
+.infocontacto .contenedor-contacto .telefono span {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+.infocontacto .contenedor-contacto .telefono img {
+  height: 30px;
+  margin: 5px;
 }
 .infocontacto .contenedor-contacto .email {
   background-color: #E3F2FD;
   margin-top: 50px;
   border-radius: 10px;
   border: 2px solid black;
-  padding: 15px;
+  padding: 20px 50px 20px 20px;
+  margin: 20px;
 }
 .infocontacto .contenedor-contacto .email p {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-.infocontacto .contenedor-contacto .email span {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-weight: 600;
+  font-weight: bold;
+  font-style: italic;
+}
+.infocontacto .contenedor-contacto .email span {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+.infocontacto .contenedor-contacto .email img {
+  height: 30px;
+  margin: 5px;
 }
 
 #maincomprar .catalogoproductos {
