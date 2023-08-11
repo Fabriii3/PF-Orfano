@@ -1,1005 +1,1040 @@
 /* Escritorio primero o destok first */
+@media (max-width : 1400px){
+    #main-nosotros #card-nosotros{
+           width: 100%;
+           .card-sobrenosotros {
+               display: flex;
+               flex-direction: row;
+                div div #imagen-card {
+                   height: 350px;
+                   width: 370px;
+                   margin-left: 70px;
+                  
+               }
+           }
+          
+       }
+}
 
 @media (max-width :1200px) {
-    #headerindex div #logo {
-        height: 150px;
-        width:1000px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 250px;
-        width:300px;
-      
-    }
+   #headerindex div #logo {
+       height: 150px;
+       width:1000px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #headerindex div #logo a #logoimg {
+       height: 250px;
+       width:300px;
+     
+   }
 
-    #mainindex {
-        grid-area: main;
-        grid-template-rows: 3% 3% 0.3fr 1fr 0.3fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "banner"
-            "sobrenosotros"
-            "galeriaimg"
-            "mapa"
-            "contacto";
-    }
+   #mainindex {
+       grid-area: main;
+       grid-template-rows: 3% 3% 0.3fr 1fr 0.3fr;
+       grid-template-columns: 1fr;
+       grid-template-areas:
+           "banner"
+           "sobrenosotros"
+           "galeriaimg"
+           "mapa"
+           "contacto";
+   }
 #carrousel-img-banner{
-    height: 100%;
-    width: 100%;
+   height: 100%;
+   width: 100%;
 }
 
 #nosotros{
-    padding-bottom: 20px;
- .sobrenosotros {
-    display: flex;
-    flex-direction: column;
-     .textnosotros {
-        padding: 10px;
-    }
+   padding-bottom: 20px;
+.sobrenosotros {
+   display: flex;
+   flex-direction: column;
+    .textnosotros {
+       padding: 10px;
+   }
 }
 }
 
 #carrousel-galeria-img{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    .galeriaindex{
-        height: 300px;
-         width: 250px; 
-        
- }
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   .galeriaindex{
+       height: 300px;
+        width: 250px; 
+       
+}
 }
 
 
 .mapaubicacion2 {
-    height: 900px;
-    width: 700px;
+   height: 900px;
+   width: 700px;
+  }
+
+  .infocontacto .contenedor-contacto {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+
+#main-nosotros #card-nosotros{
+   width: 100%;
+   .card-sobrenosotros {
+       display: flex;
+       flex-direction: row;
+        div div #imagen-card {
+           height: 350px;
+           width: 320px;
+           margin-left: 30px;
+          
+       }
    }
-
-   .infocontacto .contenedor-contacto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-   #main-nosotros #card-nosotros{
-    width: 99%;
-}
-
-#main-nosotros #card-nosotros div div div #imagen-card {
-    height: 350px;
-    width: 360px;
-    padding-left: 30px;
+  
 }
 
 }
 
 @media (max-width :1024px) {
-    #headerindex div #logo {
-        height: 150px;
-        width:800px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 250px;
-        width:300px;
-      
-    }
-
-    #mainindex {
-        grid-area: main;
-        grid-template-rows: 0.2fr 0.2fr 0.5fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "banner"
-            "sobrenosotros"
-            "galeriaimg"
-            "mapa"
-            "contacto";
-    }
-
-    #carrousel-img-banner img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .sobrenosotros {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 16px;
-        flex-direction: column;
-    }
-    .textnosotros h3 {
-        font-size: 50px;
-    }
-
-  .textnosotros ul li {
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-      
-        }
-
-        #carrousel-galeria-img{
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            .galeriaindex{
-                height: 300px;
-                 width: 220px; 
-                
-         }
-        }
-
-    .mapaubicacion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-
-    .mapaubicacion2 {
-        height: 900px;
-        width: 950px;
-        
-
-    }
-
-    .wsapaside {
-        position: fixed;
-        left: 86%;
-        bottom: 10%;
-    }
-
-    .infocontacto h3 {
-        font-size: 50px;
-        margin-bottom: 50px;
+   #headerindex div #logo {
+       height: 150px;
+       width:800px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #headerindex div #logo a #logoimg {
+       height: 250px;
+       width:300px;
      
-    }
+   }
 
-    .infocontacto {
-        display: flex;
-        font-size: 25px;
+   #mainindex {
+       grid-area: main;
+       grid-template-rows: 0.2fr 0.2fr 0.5fr 1fr;
+       grid-template-columns: 1fr;
+       grid-template-areas:
+           "banner"
+           "sobrenosotros"
+           "galeriaimg"
+           "mapa"
+           "contacto";
+   }
 
-    }
+   #carrousel-img-banner img {
+       height: 100%;
+       width: 100%;
+   }
 
-    #main-nosotros #card-nosotros{
-        width: 99%;
-    }
+   .sobrenosotros {
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 16px;
+       flex-direction: column;
+   }
+   .textnosotros h3 {
+       font-size: 50px;
+   }
 
-    #main-nosotros #card-nosotros div div div #imagen-card {
-        height: 250px;
-        width: 300px;
+ .textnosotros ul li {
+       justify-content: center;
+       align-items: center;
+       font-size: 1.5rem;
+     
+       }
+
+       #carrousel-galeria-img{
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+           .galeriaindex{
+               height: 300px;
+                width: 220px; 
+               
+        }
+       }
+
+   .mapaubicacion{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      
+   }
+
+   .mapaubicacion2 {
+       height: 900px;
+       width: 950px;
        
-      }
- 
-      #main-nosotros span .wsapaside  {
-        position:fixed;
-        left: 86%;
-        bottom: 6%; 
-      }
+
+   }
+
+   .infocontacto h3 {
+       font-size: 50px;
+       margin-bottom: 50px;
+    
+   }
+
+   .infocontacto {
+       display: flex;
+       font-size: 25px;
+
+   }
+
+   #main-nosotros #card-nosotros{
+       width: 100%;
+       .card-sobrenosotros {
+           display: flex;
+           flex-direction: row;
+            div div #imagen-card {
+               height: 300px;
+               width: 300px;
+               margin-left: 20px;
+              
+           }
+       }
+      
+   }
+
 
 
 }
 @media (max-width :992px) {
 #carrousel-galeria-img{
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            .galeriaindex{
-                height: 300px;
-                 width: 200px; 
-                
-         }
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+           .galeriaindex{
+               height: 300px;
+                width: 200px; 
+               
         }
+   }
+
+
 }
 
 @media (min-width :765px)  and  (max-width :968px) {
-    #headerindex div #logo {
-        height: 150px;
-        width:550px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 250px;
-        width:300px;
-      
-    }
-
-    .imgnosotros2 {
-        height: 100%;
-        width: 100%;
-    
-     }
-     
-     .mapaubicacion2 {
-        height: 100%;
-         width: 100%;
-      
-        }
-
-    .wsapaside {
-        position:fixed;
-          left: 86%;
-          bottom: 15%; }
-
-          #main-nosotros #card-nosotros{
-            width: 99%;
-        }
-    
-        #main-nosotros #card-nosotros div div div #imagen-card {
-            height: 200px;
-            width: 200px;
-           
-          }
-     
-}
-  
-@media (max-width :768px) {
-    #headerindex div #logo {
-        height: 150px;
-        width:600px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 250px;
-        width:300px;
-      
-    }
-
-    #carrousel-img-banner{
-        height:100%;
-        width: 767px;
-    }
-
-    #nosotros{
-     .sobrenosotros {
-         .textnosotros {
-              h3{
-               font-size: 4rem;
-              }
-              p{
-                 font-size: 1.5rem;
-              }
-        }
-    }
-    }
-
-
-    #carrousel-galeria-img{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        .galeriaindex{
-            height: 300px;
-             width: 150px; 
-            
-     }
-    }
-        
-        
-        .mapaubicacion .mapaubicacion2 {
-            height: 100%;
-            width: 100%;
-        }
-
-
-             #main-nosotros #card-nosotros{
-                width: 99%;
-            }
-        
-            #main-nosotros #card-nosotros div div div #imagen-card {
-                height: 400px;
-                width: 700px;
-              padding-left: 50px;
-              }
-         
-    
-    }
-
-    
-    
-@media (min-width :600px)  and  (max-width :630px) {
-    #headerindex div #logo {
-        height: 150px;
-        width:550px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 250px;
-        width:300px;
-      
-    }
-
-    #carrousel-img-banner {
-        height: 100%;
-        width: 100%;
-    }
-
-    #nosotros{
-        .sobrenosotros {
-            .textnosotros {
-                 h3{
-                  font-size: 3rem;
-                 }
-                 p{
-                    font-size: 1.2rem;
-                 }
-           }
-       }
-       }
+   #headerindex div #logo {
+       height: 150px;
+       width:550px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
    
-       #carrousel-galeria-img{
-        .galeriaindex{
-            height: 200px;
-             width: 110px; 
-            
-     }
-    }
-           .mapaubicacion .mapaubicacion2 {
-               height: 600px;
-               width: 550px;
-               border-radius: 30px;
-               padding: 10px;
-           }
+   #headerindex div #logo a #logoimg {
+       height: 250px;
+       width:300px;
+     
+   }
+    
+    .mapaubicacion2 {
+       height: 100%;
+        width: 100%;
+     
+       }
 
-           #main-nosotros #card-nosotros{
-            width: 98%;
-        }
-        #main-nosotros #card-nosotros div div div #imagen-card {
-            height: 400px;
-            width: 500px;
-          padding-left: 60px;
-          }
+    
+       #main-nosotros #card-nosotros{
+           width: 100%;
+           .card-sobrenosotros {
+               display: flex;
+               flex-direction: column;
+                div div #imagen-card {
+                   height: 500px;
+                   width: 600px;
+                   margin-left: 70px;
+                  
+               }
+           }
           
+       }
+
+    
+    
+}
+ 
+@media (max-width :768px) {
+   #headerindex div #logo {
+       height: 150px;
+       width:600px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #headerindex div #logo a #logoimg {
+       height: 250px;
+       width:300px;
+     
+   }
+
+   #carrousel-img-banner{
+       height:100%;
+       width: 767px;
+   }
+
+   #nosotros{
+    .sobrenosotros {
+        .textnosotros {
+             h3{
+              font-size: 4rem;
+             }
+             p{
+                font-size: 1.5rem;
+             }
+       }
+   }
+   }
+
+
+   #carrousel-galeria-img{
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       .galeriaindex{
+           height: 300px;
+            width: 150px; 
+           
+    }
+   }
+       
+       
+       .mapaubicacion .mapaubicacion2 {
+           height: 100%;
+           width: 100%;
+       }
+
+
+        
+   
+   }
+
+   
+   
+@media (min-width :600px)  and  (max-width :630px) {
+   #headerindex div #logo {
+       height: 150px;
+       width:550px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #headerindex div #logo a #logoimg {
+       height: 250px;
+       width:300px;
+     
+   }
+
+   #carrousel-img-banner {
+       height: 100%;
+       width: 100%;
+   }
+
+   #nosotros{
+       .sobrenosotros {
+           .textnosotros {
+                h3{
+                 font-size: 3rem;
+                }
+                p{
+                   font-size: 1.2rem;
+                }
+          }
+      }
+      }
+  
+      #carrousel-galeria-img{
+       .galeriaindex{
+           height: 200px;
+            width: 110px; 
+           
+    }
+   }
+          .mapaubicacion .mapaubicacion2 {
+              height: 600px;
+              width: 550px;
+              border-radius: 30px;
+              padding: 10px;
+          }
+
+      
+         
 }
 
 
 
-  .main-fqa section div li {
- 
-    padding-left: 10%;
-    font-size: 1.2rem;
-  }
+ .main-fqa section div li {
+
+   padding-left: 10%;
+   font-size: 1.2rem;
+ }
 
 
 @media (max-width :600px) {
-    #headerindex div #logo {
-        height: 150px;
-        width:550px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 250px;
-        width:300px;
-      
-    }
+   #headerindex div #logo {
+       height: 150px;
+       width:550px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #headerindex div #logo a #logoimg {
+       height: 250px;
+       width:300px;
+     
+   }
 
-    #carrousel-img-banner{
-        height:100%;
-        width: 605px;
-    }
+   #carrousel-img-banner{
+       height:100%;
+       width: 605px;
+   }
 
-    #nosotros{
-        .sobrenosotros {
-            .textnosotros {
-                 h3{
-                  font-size: 2rem;
-                 }
-                 p{
-                    font-size: 1rem;
-                 }
-           }
-       }
+   #nosotros{
+       .sobrenosotros {
+           .textnosotros {
+                h3{
+                 font-size: 2rem;
+                }
+                p{
+                   font-size: 1rem;
+                }
+          }
+      }
+      }
+  
+
+       #mainindex {
+           grid-area: main;
+           grid-template-rows: 6% 0.3fr 0.3fr  0.3fr 0.1fr;
+           grid-template-columns: 1fr;
+           grid-template-areas:
+               "banner"
+               "sobrenosotros"
+               "galeriaimg "
+               "mapa"
+               "contacto";
        }
    
+       #carrousel-galeria-img {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           .galeriaindex{
+               height: 350px;
+                width: 450px; 
+                margin-left: 70px;
+               }
+           }
+       
+   
+   
+   .mapaubicacion .mapaubicacion2 {
+       height: 600px;
+              width: 550px;
+              border-radius: 30px;
+              padding: 10px;
+   }
 
-        #mainindex {
-            grid-area: main;
-            grid-template-rows: 6% 0.3fr 0.3fr  0.3fr 0.1fr;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                "banner"
-                "sobrenosotros"
-                "galeriaimg "
-                "mapa"
-                "contacto";
-        }
-    
-        #carrousel-galeria-img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .galeriaindex{
-                height: 350px;
-                 width: 450px; 
-                 margin-left: 70px;
-                }
-            }
-        
-    
-    
-    .mapaubicacion .mapaubicacion2 {
-        height: 600px;
-               width: 550px;
-               border-radius: 30px;
-               padding: 10px;
-    }
-
-    .infocontacto .contactanostitulo {
-        font-size: 4rem;
-    }
-    .infocontacto .contenedor-contacto {
-        font-size: 1rem;
-    }
+   .infocontacto .contactanostitulo {
+       font-size: 4rem;
+   }
+   .infocontacto .contenedor-contacto {
+       font-size: 1rem;
+   }
+ 
   
-    #main-nosotros #card-nosotros div div div #imagen-card {
-        height: 400px;
-        width: 500px;
-      padding-left: 60px;
-      }
-
-    .main-fqa section div li {
-        padding-left: 10%;
-        font-size: 1.2rem;
-    }
+   #main-nosotros #card-nosotros{
+       width: 100%;
+       .card-sobrenosotros {
+           display: flex;
+           flex-direction: column;
+            div div #imagen-card {
+               height: 400px;
+               width: 500px;
+               margin-left: 50px;
+              
+           }
+       }
       
+   }
 
-     #footerindex {
-            grid-template-rows: repeat(3,1fr).5fr ;
-            grid-template-columns:1fr;
-            grid-template-areas: 
-            "nosotros" 
-            "ayuda" 
-            "siguenos "
-            "derechosautor "; }
 
-            #footerindex{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-              }
+   .main-fqa section div li {
+       padding-left: 10%;
+       font-size: 1.2rem;
+   }
+     
+
+    #footerindex {
+           grid-template-rows: repeat(3,1fr).5fr ;
+           grid-template-columns:1fr;
+           grid-template-areas: 
+           "nosotros" 
+           "ayuda" 
+           "siguenos "
+           "derechosautor "; }
+
+           #footerindex{
+               display: flex;
+               flex-direction: column;
+               flex-wrap: wrap;
+               align-items: center;
+             }
 }
 
 @media (min-width :480px)  and  (max-width :595px) {
 
-    #carrousel-img-banner{
-        height: 200px;
-        width: 100%;
-    }
+   #carrousel-img-banner{
+       height: 200px;
+       width: 100%;
+   }
 
-    
+   
 }
 
 @media (max-width :480px) {
 
-    #headerindex div #logo {
-        height: 150px;
-        width:450px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 250px;
-        width:300px;
-      
-    }
+   #headerindex div #logo {
+       height: 150px;
+       width:450px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #headerindex div #logo a #logoimg {
+       height: 250px;
+       width:300px;
+     
+   }
 
-    #mainindex {
-        grid-area: main;
-        grid-template-rows: 6% 0.3fr 0.7fr  0.5fr 0.1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "banner"
-            "sobrenosotros"
-            "galeriaimg "
-            "mapa"
-            "contacto";
+   #mainindex {
+       grid-area: main;
+       grid-template-rows: 6% 0.3fr 0.7fr  0.5fr 0.1fr;
+       grid-template-columns: 1fr;
+       grid-template-areas:
+           "banner"
+           "sobrenosotros"
+           "galeriaimg "
+           "mapa"
+           "contacto";
 
-            #carrousel-galeria-img {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .galeriaindex {
-                    height: 300px;
-                     width: 400px; 
-                     margin-left: 50px;
-                    }
-                }
-
-                .mapaubicacion{
-                    .titulo-ubicacion{     
-                      font-size: 3rem;
-                  }
-                  .mapaubicacion2 {
-                   width: 480px;
-                   border-radius: 30px;
+           #carrousel-galeria-img {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               .galeriaindex {
+                   height: 300px;
+                    width: 400px; 
+                    margin-left: 50px;
+                   }
                }
-               
-               }
-    }
 
-    #carrousel-img-banner{
-        height: 200px;
-        width: 480px;
-    }
-
-    #nosotros .sobrenosotros .textnosotros h3 {
-        font-size: 3rem;
-    }
-
-        .infocontacto .contenedor-contacto {
-            font-size: 2rem;
-            width: 480px;
-        }
-        
-
-
-              #main-nosotros #card-nosotros{
-                width: 97%;
-            }
-            
-            #main-nosotros #card-nosotros div div div #imagen-card {
-                height: 400px;
-                width: 450px;
-              padding-left: 40px;
+               .mapaubicacion{
+                   .titulo-ubicacion{     
+                     font-size: 3rem;
+                 }
+                 .mapaubicacion2 {
+                  width: 480px;
+                  border-radius: 30px;
               }
-            
-
-              .main-fqa #barra-buscar {
-                width: 70%;
-                flex-direction: column;
-                padding: 20px;
-                padding-right: 200px;
-                margin-left: 10px;
-             }
-
-             .main-fqa section div div nav div form input {
-                padding-right: 300px;
+              
               }
+   }
+
+   #carrousel-img-banner{
+       height: 200px;
+       width: 480px;
+   }
+
+   #nosotros .sobrenosotros .textnosotros h3 {
+       font-size: 3rem;
+   }
+
+       .infocontacto .contenedor-contacto {
+           font-size: 2rem;
+           width: 480px;
+       }
        
-             .main-fqa section div li {
-                font-size:1,2rem;
-               padding-left: 5%;
-               text-align: start;
+       #main-nosotros #card-nosotros{
+           width: 480px;
+           .card-sobrenosotros {
+               display: flex;
+               flex-direction: column;
+                div div #imagen-card {
+                   height: 300px;
+                   width: 400px;
+                   margin-left: 50px;
+                  
+               }
+           }
+          
+       }
+
+          
+
+             .main-fqa #barra-buscar {
+               width: 70%;
+               flex-direction: column;
+               padding: 20px;
+               padding-right: 200px;
+               margin-left: 10px;
+            }
+
+            .main-fqa section div div nav div form input {
+               padding-right: 300px;
              }
+      
+            .main-fqa section div li {
+               font-size:1,2rem;
+              padding-left: 5%;
+              text-align: start;
+            }
 }
-  
+ 
 @media (min-width : 321px)  and  (max-width :453px) {
-    #headerindex {
+   #headerindex {
+      width: 445px;
+   }
+
+   #headerindex div #logo {
+       height: 150px;
+       width:325px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #headerindex div #logo a #logoimg {
+       height: 200px;
+       width:250px;
+     
+   }
+
+   #mainindex {
+       width: 453px;
+       grid-area: main;
+       grid-template-rows: 6% 0.3fr 0.7fr  0.5fr 0.1fr;
+       grid-template-columns: 1fr;
+       grid-template-areas:
+           "banner"
+           "sobrenosotros"
+           "galeriaimg "
+           "mapa"
+           "contacto";
+
+           #carrousel-galeria-img {
+               width: 453px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               .galeriaindex {
+                   height: 300px;
+                    width: 370px; 
+                    margin-left: 50px;
+                   }
+               }
+                .mapaubicacion{
+                   width: 453px;
+               .mapaubicacion2 {
+                   width: 450px;
+                  }
+               }
+   }
+  
+#carrousel-img-banner{
+   height: 300px;
+   width: 453px;
+}
+   
+   #nosotros{
+       .sobrenosotros {
+           .textnosotros {
+                h3{
+                 font-size: 3rem;
+                }
+                p{
+                   font-size: 1rem;
+                }
+          }
+      }
+      }
+  
+    .mapaubicacion{
+        .titulo-ubicacion{     
+          font-size: 3rem;
+      }
+
+      .mapaubicacion2 {
+       height: 600px;
+       width: 300px;
+       border-radius: 30px;
+   }
+
+   }
+   
+
+   .infocontacto .contactanostitulo {
+       font-size: 3rem;
+   }
+
+   .infocontacto .contenedor-contacto {
+       font-size: 2rem;
+       width: 450px;
+   }
+   
+   #main-nosotros{
+       width: 445px;
+   }
+
+   #main-nosotros #card-nosotros{
+       width: 445px;
+       .card-sobrenosotros {
+           display: flex;
+           flex-direction: column;
+            div div #imagen-card {
+               height: 300px;
+               width: 350px;
+               margin-left: 50px;
+              
+           }
+       }
+      
+   }
+
+
+  
+     .main-fqa #barra-buscar {
+       width:20%;
+        flex-direction: column;
+       padding: 0%;
+        padding-right: 0%;
+     }
+
+     .main-fqa section div div nav div form input {
+       padding: 20%;
+       padding-right: 150px;
+   }
+   .main-fqa section div div nav div form .boton {
+       padding: 20px 80px 10px 20px
+   }
+
+     .main-fqa section div li {
+       padding-left: 5%;
+       text-align: start;
+     }
+     
+     #maincomprar{
        width: 445px;
     }
 
-    #headerindex div #logo {
-        height: 150px;
-        width:325px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 200px;
-        width:250px;
-      
+    .main-fqa{
+       width: 445px;
     }
 
-    #mainindex {
-        width: 453px;
-        grid-area: main;
-        grid-template-rows: 6% 0.3fr 0.7fr  0.5fr 0.1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "banner"
-            "sobrenosotros"
-            "galeriaimg "
-            "mapa"
-            "contacto";
-
-            #carrousel-galeria-img {
-                width: 453px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .galeriaindex {
-                    height: 300px;
-                     width: 370px; 
-                     margin-left: 50px;
-                    }
-                }
-                 .mapaubicacion{
-                    width: 453px;
-                .mapaubicacion2 {
-                    width: 450px;
-                   }
-                }
-    }
-   
- #carrousel-img-banner{
-    height: 300px;
-    width: 453px;
-}
-    
-    #nosotros{
-        .sobrenosotros {
-            .textnosotros {
-                 h3{
-                  font-size: 3rem;
-                 }
-                 p{
-                    font-size: 1rem;
-                 }
-           }
-       }
-       }
-   
-     .mapaubicacion{
-         .titulo-ubicacion{     
-           font-size: 3rem;
-       }
-
-       .mapaubicacion2 {
-        height: 600px;
-        width: 300px;
-        border-radius: 30px;
+    #main-contacto{
+       width: 445px;
     }
 
+     #footerindex {
+       width: 445px;
+        #siguenosft .redesft2 {
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           align-content: center;
+          margin: 0px 0px 30px;
+         }
     }
-    
-
-    .infocontacto .contactanostitulo {
-        font-size: 3rem;
-    }
-
-    .infocontacto .contenedor-contacto {
-        font-size: 2rem;
-        width: 450px;
-    }
-    
-   
-
-    #main-nosotros #card-nosotros{
-        width: 97,5%;
-    }
-    
-    #main-nosotros #card-nosotros div div div #imagen-card {
-        height: 300px;
-        width: 300px;
-      padding-left: 40px;
-      }
-    
-   
-      .main-fqa #barra-buscar {
-        width:20%;
-         flex-direction: column;
-        padding: 0%;
-         padding-right: 0%;
-      }
-
-      .main-fqa section div div nav div form input {
-        padding: 20%;
-        padding-right: 150px;
-    }
-    .main-fqa section div div nav div form .boton {
-        padding: 20px 80px 10px 20px
-    }
-
-      .main-fqa section div li {
-        padding-left: 5%;
-        text-align: start;
-      }
-      
-      #maincomprar{
-        width: 445px;
-     }
-
-     .main-fqa{
-        width: 445px;
-     }
-
-     #main-contacto{
-        width: 445px;
-     }
-
-      #footerindex {
-        width: 445px;
-         #siguenosft .redesft2 {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: center;
-           margin: 0px 0px 30px;
-          }
-     }
 
 }
 
 
 
 @media (max-width :320px) {
-    #headerindex {
-        width: 445px;
-     }
+   #headerindex {
+       width: 445px;
+    }
+    
+    #footerindex{
+       width: 445px;
+    }
+
+    #maincomprar{
+       width: 445px;
+    }
+
+    .main-fqa{
+       width: 445px;
+    }
+
+    #main-contacto{
+       width: 445px;
+    }
+
+   #headerindex div #logo {
+       height: 150px;
+       width:325px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #headerindex div #logo a #logoimg {
+       height: 200px;
+       width:250px;
      
-     #footerindex{
-        width: 445px;
-     }
+   }
 
-     #maincomprar{
-        width: 445px;
-     }
+   #mainindex {
+       width: 445px;
+       grid-area: main;
+       grid-template-rows: 6% 0.3fr 0.7fr  0.7fr 0.2fr;
+       grid-template-columns: 1fr;
+       grid-template-areas:
+           "banner"
+           "sobrenosotros"
+           "galeriaimg "
+           "mapa"
+           "contacto";
 
-     .main-fqa{
-        width: 445px;
-     }
-
-     #main-contacto{
-        width: 445px;
-     }
-
-    #headerindex div #logo {
-        height: 150px;
-        width:325px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #headerindex div #logo a #logoimg {
-        height: 200px;
-        width:250px;
-      
-    }
-
-    #mainindex {
-        width: 445px;
-        grid-area: main;
-        grid-template-rows: 6% 0.3fr 0.7fr  0.7fr 0.2fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "banner"
-            "sobrenosotros"
-            "galeriaimg "
-            "mapa"
-            "contacto";
-
-            #carrousel-galeria-img {
-                width:445px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .galeriaindex {
-                    height: 300px;
-                     width: 330px; 
-                     margin-left: 60px;
-                    }
-                }
-            .mapaubicacion {
-                width: 445px;
-                .mapaubicacion2 {
-                    width: 430px;
+           #carrousel-galeria-img {
+               width:445px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               .galeriaindex {
+                   height: 300px;
+                    width: 330px; 
+                    margin-left: 60px;
                    }
+               }
+           .mapaubicacion {
+               width: 445px;
+               .mapaubicacion2 {
+                   width: 430px;
+                  }
+               }
+                  padding-bottom: 50px;
+   }
+
+     #carrousel-img-banner{
+       height: 200px;
+       width: 445px;
+   }
+   
+   
+   .leer-mas-btn {
+       margin-bottom: 20px;
+   }
+
+   #nosotros{
+       width: 445px;
+       .sobrenosotros {
+           .textnosotros {
+                h3{
+                 font-size: 3rem;
                 }
-                   padding-bottom: 50px;
+                p{
+                   font-size: 1.3rem;
+                }
+          }
+      }
     }
+  
 
-      #carrousel-img-banner{
-        height: 200px;
-        width: 445px;
-    }
-    
-    
-    .leer-mas-btn {
-        margin-bottom: 20px;
-    }
+   .infocontacto{
+       width: 445px;
+       .contactanostitulo {
+           font-size: 3rem;
+       }
+       .contenedor-contacto {
+           font-size: 2rem;
+           width: 445px;
+       } 
 
-    #nosotros{
-        width: 445px;
-        .sobrenosotros {
-            .textnosotros {
-                 h3{
-                  font-size: 3rem;
-                 }
-                 p{
-                    font-size: 1.3rem;
-                 }
+   } 
+
+
+   #main-nosotros{
+       width: 445px;
+   }
+
+   #main-nosotros #card-nosotros{
+       width: 445px;
+       .card-sobrenosotros {
+           display: flex;
+           flex-direction: column;
+            div div #imagen-card {
+               height: 300px;
+               width: 350px;
+               margin-left: 50px;
+              
            }
        }
-     }
+      
+   }
    
 
-    .infocontacto{
-        width: 445px;
-        .contactanostitulo {
-            font-size: 3rem;
-        }
-        .contenedor-contacto {
-            font-size: 2rem;
-            width: 445px;
-        } 
-
-    } 
-
-
-     
-    #main-nosotros #card-nosotros{
-        width: 96%;
-    }
-    #main-nosotros{
-        width: 450px;
-        
-    }
-
-    #main-nosotros #card-nosotros div div div #imagen-card {
-        height: 200px;
-        width: 400px;
-      }
-
-      .main-fqa #barra-buscar {
-        width:20%;
-         flex-direction: column;
-        padding: 0%;
-         padding-right: 0%;
-      }
-
-      .main-fqa section div div nav div form input {
-        padding: 20%;
-        padding-right: 150px;
-    }
-    .main-fqa section div div nav div form .boton {
-        padding: 20px 80px 10px 20px
-    }
-
-      .main-fqa section div li {
-        padding-left: 5%;
-        text-align: start;
-      }
-
-      #footerindex{
-        display: flex;
+     .main-fqa #barra-buscar {
+       width:20%;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        #siguenosft .redesft2 {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: center;
-           margin: 0px 0px 30px;
-          }
+       padding: 0%;
+        padding-right: 0%;
      }
 
+     .main-fqa section div div nav div form input {
+       padding: 20%;
+       padding-right: 150px;
+   }
+   .main-fqa section div div nav div form .boton {
+       padding: 20px 80px 10px 20px
+   }
 
+     .main-fqa section div li {
+       padding-left: 5%;
+       text-align: start;
+     }
 
+     #footerindex{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       align-items: center;
+       #siguenosft .redesft2 {
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           align-content: center;
+          margin: 0px 0px 30px;
+         }
     }
 
 
- 
+
+   }
 
 
 
 
+
+// Vista mobile 
 
 @media (min-width :1200px) and (max-width :1400px) {
-       
-        #mainindex {
-            grid-area: main;
-            grid-template-rows: 0.1fr repeat(3,0.5fr) 0.3fr ;
-            grid-template-columns: 1fr 1fr ;
-            grid-template-areas: 
-            "banner banner"
-            "sobrenosotros sobrenosotros"
-            "galeriaimg galeriaimg"
-            "mapa mapa"
-            "contacto contacto"
-        }
+      
+       #mainindex {
+           grid-area: main;
+           grid-template-rows: 0.1fr repeat(3,0.5fr) 0.3fr ;
+           grid-template-columns: 1fr 1fr ;
+           grid-template-areas: 
+           "banner banner"
+           "sobrenosotros sobrenosotros"
+           "galeriaimg galeriaimg"
+           "mapa mapa"
+           "contacto contacto"
+       }
 
-          
-      .sobrenosotros {
-        flex-direction: column;
-      }
          
-      #carrousel-galeria-img{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .galeriaindex{
-            height: 300px;
-             width: 300px; 
-            
+     .sobrenosotros {
+       flex-direction: column;
      }
-    }
-
-     
-     .mapaubicacion2 {
-        height:100%;
-        width: 100%;
-        }
-
-
-        .infocontacto .contenedor-contacto {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-
-        #main-nosotros #card-nosotros{
-            width: 99%;
-        }
-
-        #main-nosotros #card-nosotros div div div #imagen-card {
-            height: 250px;
-            width: 350px;
+        
+     #carrousel-galeria-img{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       .galeriaindex{
+           height: 300px;
+            width: 300px; 
            
-          }
-    
-     }
-    
- @media (max-width :1200px) {
-    
- #carrousel-galeria-img{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    .galeriaindex{
-        height: 300px;
-         width: 250px; 
-        }
     }
- }
-
- @media (max-width :576px) {
-    #mainindex {
-        grid-area: main;
-        grid-template-rows: 6% 0.3fr 0.3fr  0.3fr 0.1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "banner"
-            "sobrenosotros"
-            "galeriaimg "
-            "mapa"
-            "contacto";
-    }
-
-    #carrousel-galeria-img{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .galeriaindex{
-            height: 350px;
-             width: 450px; 
-             margin-left: 70px;
-            }
-        }
-    }
-
-
+   }
 
     
-    
+    .mapaubicacion2 {
+       height:100%;
+       width: 100%;
+       }
+
+
+       .infocontacto .contenedor-contacto {
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+       }
+
+   
+       // #main-nosotros #card-nosotros{
+       //     width: 100%;
+       //     .card-sobrenosotros {
+       //         display: flex;
+       //         flex-direction: row;
+       //          div div #imagen-card {
+       //             height: 350px;
+       //             width: 370px;
+       //             margin-left: 70px;
+                  
+       //         }
+       //     }
+          
+       // }
+   
+    }
+   
+@media (min-width :1200px) {
+   
+#carrousel-galeria-img{
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   .galeriaindex{
+       height: 300px;
+        width: 250px; 
+       }
+   }
+
+   
+
+}
+
+@media (max-width :576px) {
+   #mainindex {
+       grid-area: main;
+       grid-template-rows: 6% 0.3fr 0.3fr  0.3fr 0.1fr;
+       grid-template-columns: 1fr;
+       grid-template-areas:
+           "banner"
+           "sobrenosotros"
+           "galeriaimg "
+           "mapa"
+           "contacto";
+   }
+
+   #carrousel-galeria-img{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       .galeriaindex{
+           height: 350px;
+            width: 450px; 
+            margin-left: 70px;
+           }
+       }
+   }
+
+
+
+   
+   

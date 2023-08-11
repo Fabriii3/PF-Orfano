@@ -406,28 +406,34 @@ li {
   text-align: justify;
   text-align: center;
 }
-#main-nosotros #card-nosotros div div {
+#main-nosotros #card-nosotros .card-sobrenosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#main-nosotros #card-nosotros .card-sobrenosotros div {
   background-color: black;
 }
-#main-nosotros #card-nosotros div div .card-titulo {
+#main-nosotros #card-nosotros .card-sobrenosotros div .card-titulo {
   color: aliceblue;
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
 }
-#main-nosotros #card-nosotros div div .card-texto {
+#main-nosotros #card-nosotros .card-sobrenosotros div .card-texto {
   color: aliceblue;
   font-size: 1.2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   text-align: center;
 }
-#main-nosotros #card-nosotros div div div #imagen-card {
+#main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
   height: 450px;
-  width: 585px;
+  width: 500px;
   border-radius: 15px;
   padding-top: 10px;
   margin: 10px;
+  margin-left: 70px;
 }
 
 .main-fqa section div p {
@@ -578,6 +584,20 @@ li {
 }
 
 /* Escritorio primero o destok first */
+@media (max-width: 1400px) {
+  #main-nosotros #card-nosotros {
+    width: 100%;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros {
+    display: flex;
+    flex-direction: row;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
+    height: 350px;
+    width: 370px;
+    margin-left: 70px;
+  }
+}
 @media (max-width: 1200px) {
   #headerindex div #logo {
     height: 150px;
@@ -629,12 +649,16 @@ li {
     flex-wrap: wrap;
   }
   #main-nosotros #card-nosotros {
-    width: 99%;
+    width: 100%;
   }
-  #main-nosotros #card-nosotros div div div #imagen-card {
+  #main-nosotros #card-nosotros .card-sobrenosotros {
+    display: flex;
+    flex-direction: row;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
     height: 350px;
-    width: 360px;
-    padding-left: 30px;
+    width: 320px;
+    margin-left: 30px;
   }
 }
 @media (max-width: 1024px) {
@@ -690,11 +714,6 @@ li {
     height: 900px;
     width: 950px;
   }
-  .wsapaside {
-    position: fixed;
-    left: 86%;
-    bottom: 10%;
-  }
   .infocontacto h3 {
     font-size: 50px;
     margin-bottom: 50px;
@@ -704,16 +723,16 @@ li {
     font-size: 25px;
   }
   #main-nosotros #card-nosotros {
-    width: 99%;
+    width: 100%;
   }
-  #main-nosotros #card-nosotros div div div #imagen-card {
-    height: 250px;
+  #main-nosotros #card-nosotros .card-sobrenosotros {
+    display: flex;
+    flex-direction: row;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
+    height: 300px;
     width: 300px;
-  }
-  #main-nosotros span .wsapaside {
-    position: fixed;
-    left: 86%;
-    bottom: 6%;
+    margin-left: 20px;
   }
 }
 @media (max-width: 992px) {
@@ -739,25 +758,21 @@ li {
     height: 250px;
     width: 300px;
   }
-  .imgnosotros2 {
-    height: 100%;
-    width: 100%;
-  }
   .mapaubicacion2 {
     height: 100%;
     width: 100%;
   }
-  .wsapaside {
-    position: fixed;
-    left: 86%;
-    bottom: 15%;
-  }
   #main-nosotros #card-nosotros {
-    width: 99%;
+    width: 100%;
   }
-  #main-nosotros #card-nosotros div div div #imagen-card {
-    height: 200px;
-    width: 200px;
+  #main-nosotros #card-nosotros .card-sobrenosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
+    height: 500px;
+    width: 600px;
+    margin-left: 70px;
   }
 }
 @media (max-width: 768px) {
@@ -795,14 +810,6 @@ li {
     height: 100%;
     width: 100%;
   }
-  #main-nosotros #card-nosotros {
-    width: 99%;
-  }
-  #main-nosotros #card-nosotros div div div #imagen-card {
-    height: 400px;
-    width: 700px;
-    padding-left: 50px;
-  }
 }
 @media (min-width: 600px) and (max-width: 630px) {
   #headerindex div #logo {
@@ -835,14 +842,6 @@ li {
     width: 550px;
     border-radius: 30px;
     padding: 10px;
-  }
-  #main-nosotros #card-nosotros {
-    width: 98%;
-  }
-  #main-nosotros #card-nosotros div div div #imagen-card {
-    height: 400px;
-    width: 500px;
-    padding-left: 60px;
   }
 }
 .main-fqa section div li {
@@ -901,10 +900,17 @@ li {
   .infocontacto .contenedor-contacto {
     font-size: 1rem;
   }
-  #main-nosotros #card-nosotros div div div #imagen-card {
+  #main-nosotros #card-nosotros {
+    width: 100%;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
     height: 400px;
     width: 500px;
-    padding-left: 60px;
+    margin-left: 50px;
   }
   .main-fqa section div li {
     padding-left: 10%;
@@ -976,12 +982,16 @@ li {
     width: 480px;
   }
   #main-nosotros #card-nosotros {
-    width: 97%;
+    width: 480px;
   }
-  #main-nosotros #card-nosotros div div div #imagen-card {
-    height: 400px;
-    width: 450px;
-    padding-left: 40px;
+  #main-nosotros #card-nosotros .card-sobrenosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
+    height: 300px;
+    width: 400px;
+    margin-left: 50px;
   }
   .main-fqa #barra-buscar {
     width: 70%;
@@ -1064,13 +1074,20 @@ li {
     font-size: 2rem;
     width: 450px;
   }
-  #main-nosotros #card-nosotros {
-    width: 97, 5%;
+  #main-nosotros {
+    width: 445px;
   }
-  #main-nosotros #card-nosotros div div div #imagen-card {
+  #main-nosotros #card-nosotros {
+    width: 445px;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
     height: 300px;
-    width: 300px;
-    padding-left: 40px;
+    width: 350px;
+    margin-left: 50px;
   }
   .main-fqa #barra-buscar {
     width: 20%;
@@ -1188,15 +1205,20 @@ li {
     font-size: 2rem;
     width: 445px;
   }
-  #main-nosotros #card-nosotros {
-    width: 96%;
-  }
   #main-nosotros {
-    width: 450px;
+    width: 445px;
   }
-  #main-nosotros #card-nosotros div div div #imagen-card {
-    height: 200px;
-    width: 400px;
+  #main-nosotros #card-nosotros {
+    width: 445px;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-nosotros #card-nosotros .card-sobrenosotros div div #imagen-card {
+    height: 300px;
+    width: 350px;
+    margin-left: 50px;
   }
   .main-fqa #barra-buscar {
     width: 20%;
@@ -1257,15 +1279,8 @@ li {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #main-nosotros #card-nosotros {
-    width: 99%;
-  }
-  #main-nosotros #card-nosotros div div div #imagen-card {
-    height: 250px;
-    width: 350px;
-  }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   #carrousel-galeria-img {
     flex-direction: row;
     justify-content: center;

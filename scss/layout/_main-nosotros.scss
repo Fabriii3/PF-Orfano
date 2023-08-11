@@ -1,5 +1,5 @@
 #main-nosotros{
-  background-color:#E3F2FD;
+  background-color:$celeste;
     // background-image:url("../assets/images/");
     // background-repeat: no-repeat;
     // background-size: cover;
@@ -29,14 +29,17 @@
        }
     }
     
-    #card-nosotros{
+    #card-nosotros {
               .titulo-nuestro-equipo{
                 font-weight: 800;
                 font-size: 4rem;
                 text-align: justify;
                 text-align: center
               }
-    div {
+    .card-sobrenosotros {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
         div {
             background-color: black;
             .card-titulo{ 
@@ -56,10 +59,11 @@
              div{
                 #imagen-card{
                     height:450px ;
-                    width:585px;
+                    width:500px;
                     border-radius: 15px;
                     padding-top: 10px;
                     margin: 10px;
+                    margin-left: 70px;
               }
             }
          }
